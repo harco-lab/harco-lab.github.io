@@ -25,18 +25,20 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
-          python-version: "3.x"
+          python-version: "3.13"
 
+      # Retries, and keeps the current data with a warning while YouTube's
+      # feed is down, so an outage on YouTube's side does not fail the run.
       - name: Run YouTube scraper
         run: python scripts/scrape_youtube.py
 
       - name: Commit updated YouTube data
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           file_pattern: _data/youtube.json
           commit_message: "Update YouTube video data"

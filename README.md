@@ -85,6 +85,7 @@ hyHarco.github.io/
 │   ├── start.sh                  # Start dev server
 │   ├── fetch_openalex.py         # Optional OpenAlex publication fetcher
 │   ├── local_publication_sync.py # Cross-platform Scholar check, sync, and push
+│   ├── publication_changes.py    # Summarize publication changes for the weekly PR
 │   ├── publication_pipeline.py   # Merge fetched data, overrides, DOI metadata
 │   ├── scrape_scholar.py         # Fetch and parse Google Scholar
 │   ├── update_publications.py    # Build publication/publications.json
@@ -350,9 +351,15 @@ python scripts/local_publication_sync.py --no-push
 ```
 
 The GitHub Actions workflow `.github/workflows/update-publications.yml`
-is manual-only and remains available as a fallback. Its default source is
-OpenAlex; Google Scholar scraping should run from a local machine or lab server
-because GitHub-hosted runners can be blocked by Google Scholar.
+runs every Monday at 05:17 KST and can also be started by hand. Scheduled runs
+use OpenAlex; Google Scholar scraping should run from a local machine or lab
+server because GitHub-hosted runners can be blocked by Google Scholar. The
+workflow does not commit to `main`: when the data changes it opens (or updates)
+an `Update publication data` pull request that lists the added and removed
+papers. OpenAlex can return papers by people with the same name or from before
+the lab started, so check each added paper before merging. The repository
+setting **Settings → Actions → General → Allow GitHub Actions to create and
+approve pull requests** must be on for the workflow to open the PR.
 
 ### Updating YouTube Videos
 
@@ -368,7 +375,9 @@ python3 scripts/scrape_youtube.py
 The GitHub Actions workflow `.github/workflows/update-youtube.yml`
 refreshes `_data/youtube.json` every day at 04:37 KST, or when the YouTube
 scraper workflow files are pushed to `main`, and commits the data when it
-changes.
+changes. YouTube's RSS feed sometimes answers 404 or 5xx for hours; the scraper
+retries, and if the feed stays unavailable it keeps the current data and leaves
+a warning on the run instead of failing.
 
 ---
 
