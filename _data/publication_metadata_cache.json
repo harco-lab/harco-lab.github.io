@@ -1,1 +1,447 @@
-{}
+{
+    "doi:10.1007/s11370-026-00750-1": {
+        "title": "A lightweight tendon-driven hand exoskeleton with dual-safety mechanism for grasp assistance",
+        "authors": [
+            "Wenqi Li",
+            "Le Bao",
+            "Wenbin Dong",
+            "Wansoo Kim"
+        ],
+        "publisher": "Intelligent Service Robotics",
+        "date": "2026-8-24",
+        "link": "https://doi.org/hcq2xx"
+    },
+    "doi:10.3390/s26175678": {
+        "title": "Deployment-Oriented Evaluation of Lightweight IMU-Based Human Activity Recognition: On-Device Efficiency and Streaming Feasibility",
+        "authors": [
+            "Inho Gil",
+            "Seongmin Ha",
+            "Jihwan Oh",
+            "Donggyu Lee",
+            "Soonwoong Hwang",
+            "Joonkyu No",
+            "Wansoo Kim"
+        ],
+        "publisher": "Sensors",
+        "date": "2026-9-7",
+        "link": "https://doi.org/hcq2xz"
+    },
+    "doi:10.1109/lra.2025.3592087": {
+        "title": "Geo-LSTM: A Geometry and Temporal Feature Fusion Algorithm for Multi-Sensor 3D Localization",
+        "authors": [
+            "Kai Li",
+            "Le Bao",
+            "Wansoo Kim"
+        ],
+        "publisher": "IEEE Robotics and Automation Letters",
+        "date": "2025-9",
+        "link": "https://doi.org/hcq2x2"
+    },
+    "doi:10.23919/iccas66577.2025.11301309": {
+        "title": "Pelvic IMU-Based Gait Phase Classification using Kernel-Embedded ELM: A Preliminary Validation Framework for Future Hemiplegic Gait Applications",
+        "authors": [
+            "Seongmin Ha",
+            "Jungsoo Lee",
+            "Joonkyu No",
+            "Soonwoong Hwang",
+            "Wansoo Kim"
+        ],
+        "publisher": "2025 25th International Conference on Control, Automation and Systems (ICCAS)",
+        "date": "2025-11-4",
+        "link": "https://doi.org/hcq2x3"
+    },
+    "doi:10.1109/humanoids65713.2025.11203025": {
+        "title": "Proactive Ergonomic Human Motion Generation for Human-Humanoid Collaboration",
+        "authors": [
+            "Dong-gyu Lee",
+            "Seunghoon Hwang",
+            "Seungmin Choi",
+            "Yoonseo Kim",
+            "Wansoo Kim"
+        ],
+        "publisher": "2025 IEEE-RAS 24th International Conference on Humanoid Robots (Humanoids)",
+        "date": "2025-9-30",
+        "link": "https://doi.org/hcq2x4"
+    },
+    "doi:10.1109/iros60139.2025.11247511": {
+        "title": "Stable Variable Impedance Control via CLF-MPC for Physical Human-Robot Interaction",
+        "authors": [
+            "Seungmin Choi",
+            "Soonwoong Hwang",
+            "Wansoo Kim"
+        ],
+        "publisher": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+        "date": "2025-10-19",
+        "link": "https://doi.org/hcq2x5"
+    },
+    "doi:10.1109/lra.2024.3519871": {
+        "title": "A Multi-Task Energy-Aware Impedance Controller for Enhanced Safety in Physical Human-Robot Interaction",
+        "authors": [
+            "Seungmin Choi",
+            "Seongmin Ha",
+            "Wansoo Kim"
+        ],
+        "publisher": "IEEE Robotics and Automation Letters",
+        "date": "2025-2",
+        "link": "https://doi.org/hcq2x6"
+    },
+    "doi:10.3390/s24113341": {
+        "title": "An Enhanced Indoor Three-Dimensional Localization System with Sensor Fusion Based on Ultra-Wideband Ranging and Dual Barometer Altimetry",
+        "authors": [
+            "Le Bao",
+            "Kai Li",
+            "Joosun Lee",
+            "Wenbin Dong",
+            "Wenqi Li",
+            "Kyoosik Shin",
+            "Wansoo Kim"
+        ],
+        "publisher": "Sensors",
+        "date": "2024-5-23",
+        "link": "https://doi.org/hcq2x7"
+    },
+    "doi:10.1109/ur61395.2024.10597488": {
+        "title": "An Intuitive Framework to Minimize Cognitive Load in Robotic Control: A Comparative Evaluation of Body Parts",
+        "authors": [
+            "Joonhyun Kim",
+            "Jungsoo Lee",
+            "Wansoo Kim"
+        ],
+        "publisher": "2024 21st International Conference on Ubiquitous Robots (UR)",
+        "date": "2024-6-24",
+        "link": "https://doi.org/hcq2x8"
+    },
+    "doi:10.1109/access.2024.3415109": {
+        "title": "Collision-Free Target Grasping in Complex and Cluttered Environment for Efficient Task and Motion Planning",
+        "authors": [
+            "Joosun Lee",
+            "Taeyhang Lim",
+            "Le Bao",
+            "Wansoo Kim"
+        ],
+        "publisher": "IEEE Access",
+        "date": "2024",
+        "link": "https://doi.org/hcq2x9"
+    },
+    "doi:10.23919/iccas63016.2024.10773192": {
+        "title": "Dual UWB Anchors-Based Target Tracking Strategy for an Omnidirectional Mobile Robot",
+        "authors": [
+            "Le Bao",
+            "Kai Li",
+            "Wenbin Dong",
+            "Wenqi Li",
+            "Kyoosik Shin",
+            "Changsoo Han",
+            "Wansoo Kim"
+        ],
+        "publisher": "2024 24th International Conference on Control, Automation and Systems (ICCAS)",
+        "date": "2024-10-29",
+        "link": "https://doi.org/hcq2zb"
+    },
+    "doi:10.23919/iccas63016.2024.10773204": {
+        "title": "Transferable Convolutional Neural Networks for IMU-based Motion Gesture Recognition in Human-Machine Interaction",
+        "authors": [
+            "Joonhyun Kim",
+            "Jungsoo Lee",
+            "Wansoo Kim"
+        ],
+        "publisher": "2024 24th International Conference on Control, Automation and Systems (ICCAS)",
+        "date": "2024-10-29",
+        "link": "https://doi.org/hcq2zc"
+    },
+    "doi:10.1016/j.mechatronics.2024.103227": {
+        "title": "Twisted String Actuator mechanism with adjustable offset of strings for continuous variable transmission system",
+        "authors": [
+            "Dongcheol Shin",
+            "Brian Byunghyun Kang",
+            "Wansoo Kim"
+        ],
+        "publisher": "Mechatronics",
+        "date": "2024-10",
+        "link": "https://doi.org/hcq2zd"
+    },
+    "doi:10.1109/lra.2023.3282385": {
+        "title": "A Power-Aware Control Strategy for an Elbow Effort-Compensation Device",
+        "authors": [
+            "Emir Mobedi",
+            "Sebastian Hjorth",
+            "Wansoo Kim",
+            "Elena De Momi",
+            "Nikos G. Tsagarakis",
+            "Arash Ajoudani"
+        ],
+        "publisher": "IEEE Robotics and Automation Letters",
+        "date": "2023-7",
+        "link": "https://doi.org/hcq2zf"
+    },
+    "doi:10.1007/s12555-023-0194-0": {
+        "title": "Adaptive Online Steering Efficiency Coefficient Estimation for Enhanced Terrain Motion Control in Four-wheeled Skid-steering Mobile Robots",
+        "authors": [
+            "Le Bao",
+            "Kai Li",
+            "Changsoo Han",
+            "Kyoosik Shin",
+            "Wansoo Kim"
+        ],
+        "publisher": "International Journal of Control, Automation and Systems",
+        "date": "2023-8",
+        "link": "https://doi.org/hcq2zg"
+    },
+    "doi:10.1109/tmech.2023.3267681": {
+        "title": "Design and Control of an Assistive Device for Elbow Effort-Compensation",
+        "authors": [
+            "Emir Mobedi",
+            "Wansoo Kim",
+            "Mattia Leonori",
+            "Nikos G. Tsagarakis",
+            "Arash Ajoudani"
+        ],
+        "publisher": "IEEE/ASME Transactions on Mechatronics",
+        "date": "2023-12",
+        "link": "https://doi.org/g82dxh"
+    },
+    "doi:10.1109/lra.2023.3338878": {
+        "title": "Design and Validation of Soft Sliding Structure With Adjustable Stiffness for Ankle Sprain Prevention",
+        "authors": [
+            "Seoyeon Ham",
+            "Soe Lin Paing",
+            "Brian Byunghyun Kang",
+            "Hyunglae Lee",
+            "Wansoo Kim"
+        ],
+        "publisher": "IEEE Robotics and Automation Letters",
+        "date": "2024-2",
+        "link": "https://doi.org/hcq2zh"
+    },
+    "doi:10.1109/iros55552.2023.10342045": {
+        "title": "Investigating the Usability of Collaborative Robot Control Through Hands-Free Operation Using Eye Gaze and Augmented Reality",
+        "authors": [
+            "Joosun Lee",
+            "Taeyhang Lim",
+            "Wansoo Kim"
+        ],
+        "publisher": "2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+        "date": "2023-10-1",
+        "link": "https://doi.org/hcq2zj"
+    },
+    "doi:10.1109/ro-man57019.2023.10309384": {
+        "title": "Multitask Learning for Multiple Recognition Tasks: A Framework for Lower-limb Exoskeleton Robot Applications",
+        "authors": [
+            "Joonhyun Kim",
+            "Seongmin Ha",
+            "Dongbin Shin",
+            "Seoyeon Ham",
+            "Jaepil Jang",
+            "Wansoo Kim"
+        ],
+        "publisher": "2023 32nd IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)",
+        "date": "2023-8-28",
+        "link": "https://doi.org/hcq2zk"
+    },
+    "doi:10.1109/irc59093.2023.00027": {
+        "title": "Towards Natural and Intuitive Human-Robot Collaboration based on Goal-Oriented Human Gaze Intention Recognition",
+        "authors": [
+            "Taeyhang Lim",
+            "Joosun Lee",
+            "Wansoo Kim"
+        ],
+        "publisher": "2023 Seventh IEEE International Conference on Robotic Computing (IRC)",
+        "date": "2023-12-11",
+        "link": "https://doi.org/gtt4c9"
+    },
+    "doi:10.1109/humanoids53995.2022.10000194": {
+        "title": "A Multi-metric Modular Framework for Human-like Gait Analysis Based on a Recorded Set of Variable Gait Patterns",
+        "authors": [
+            "Stephan Kapteijn",
+            "Wansoo Kim",
+            "Laura Marchal-Crespo",
+            "Luka Peternel"
+        ],
+        "publisher": "2022 IEEE-RAS 21st International Conference on Humanoid Robots (Humanoids)",
+        "date": "2022-11-28",
+        "link": "https://doi.org/hcq2zm"
+    },
+    "doi:10.1109/ur55393.2022.9826288": {
+        "title": "A Sensor Fusion Strategy for Indoor Target Three-dimensional Localization based on Ultra-Wideband and Barometric Altimeter Measurements",
+        "authors": [
+            "Le Bao",
+            "Kai Li",
+            "Wenqi Li",
+            "Kyoosik Shin",
+            "Wansoo Kim"
+        ],
+        "publisher": "2022 19th International Conference on Ubiquitous Robots (UR)",
+        "date": "2022-7-4",
+        "link": "https://doi.org/hcq2zn"
+    },
+    "doi:10.1109/thms.2021.3133807": {
+        "title": "An Online Multi-Index Approach to Human Ergonomics Assessment in the Workplace",
+        "authors": [
+            "Marta Lorenzini",
+            "Wansoo Kim",
+            "Arash Ajoudani"
+        ],
+        "publisher": "IEEE Transactions on Human-Machine Systems",
+        "date": "2022-10",
+        "link": "https://doi.org/hcq2zp"
+    },
+    "doi:10.3390/s22072462": {
+        "title": "Development of a Prototype Overground Pelvic Obliquity Support Robot for Rehabilitation of Hemiplegia Gait",
+        "authors": [
+            "Seunghoon Hwang",
+            "Seungchan Lee",
+            "Dongbin Shin",
+            "Inhyuk Baek",
+            "Seoyeon Ham",
+            "Wansoo Kim"
+        ],
+        "publisher": "Sensors",
+        "date": "2022-3-23",
+        "link": "https://doi.org/hcq2zq"
+    },
+    "doi:10.1109/biorob52689.2022.9925563": {
+        "title": "ErgoTac-Belt: Anticipatory Vibrotactile Feedback to Lead Centre of Pressure during Walking",
+        "authors": [
+            "Marta Lorenzini",
+            "Juan M. Gandarias",
+            "Luca Fortini",
+            "Wansoo Kim",
+            "Arash Ajoudani"
+        ],
+        "publisher": "2022 9th IEEE RAS/EMBS International Conference for Biomedical Robotics and Biomechatronics (BioRob)",
+        "date": "2022-8-21",
+        "link": "https://doi.org/hcq2zr"
+    },
+    "doi:10.23919/iccas55662.2022.10003946": {
+        "title": "IMU-based Online Kinematic Model Parameter Estimation for Four-Wheeled Skid-Steering Mobile Robot Desired Motion Tracking on Different Terrains",
+        "authors": [
+            "Kai Li",
+            "Le Bao",
+            "Changsoo Han",
+            "Kyoosik Shin",
+            "Wansoo Kim"
+        ],
+        "publisher": "2022 22nd International Conference on Control, Automation and Systems (ICCAS)",
+        "date": "2022-11-27",
+        "link": "https://doi.org/hcq2zs"
+    },
+    "doi:10.1016/j.mechatronics.2022.102807": {
+        "title": "Learning cooperative dynamic manipulation skills from human demonstration videos",
+        "authors": [
+            "Francesco Iodice",
+            "Yuqiang Wu",
+            "Wansoo Kim",
+            "Fei Zhao",
+            "Elena De Momi",
+            "Arash Ajoudani"
+        ],
+        "publisher": "Mechatronics",
+        "date": "2022-8",
+        "link": "https://doi.org/hcq2zt"
+    },
+    "doi:10.1109/toh.2021.3112795": {
+        "title": "A Directional Vibrotactile Feedback Interface for Ergonomic Postural Adjustment",
+        "authors": [
+            "Wansoo Kim",
+            "Virginia Ruiz Garate",
+            "Juan M. Gandarias",
+            "Marta Lorenzini",
+            "Arash Ajoudani"
+        ],
+        "publisher": "IEEE Transactions on Haptics",
+        "date": "2022-1-1",
+        "link": "https://doi.org/gr4hf2"
+    },
+    "doi:10.1109/lra.2021.3100936": {
+        "title": "A Flexible Robotics-Inspired Computational Model of Compressive Loading on the Human Spine",
+        "authors": [
+            "Leonardo Ventura",
+            "Marta Lorenzini",
+            "Wansoo Kim",
+            "Arash Ajoudani"
+        ],
+        "publisher": "IEEE Robotics and Automation Letters",
+        "date": "2021-10",
+        "link": "https://doi.org/hcq2zv"
+    },
+    "doi:10.1007/s11370-020-00346-3": {
+        "title": "Gait pattern generation algorithm for lower-extremity rehabilitation–exoskeleton robot considering wearer’s condition",
+        "authors": [
+            "Seung Hoon Hwang",
+            "Dong Ik Sun",
+            "Jeakweon Han",
+            "Wan-Soo Kim"
+        ],
+        "publisher": "Intelligent Service Robotics",
+        "date": "2021-2-4",
+        "link": "https://doi.org/hcq2zw"
+    },
+    "doi:10.1007/s12541-019-00217-7": {
+        "title": "Development of a Passive Modular Knee Mechanism for a Lower Limb Exoskeleton Robot and Its Effectiveness in the Workplace",
+        "authors": [
+            "Ho-Jun Kim",
+            "Dong-Hwan Lim",
+            "Wan-Soo Kim",
+            "Chang-Soo Han"
+        ],
+        "publisher": "International Journal of Precision Engineering and Manufacturing",
+        "date": "2019-12-6",
+        "link": "https://doi.org/hcq2zx"
+    },
+    "doi:10.1016/j.autcon.2019.102890": {
+        "title": "Development of bulldozer sensor system for estimating the position of blade cutting edge",
+        "authors": [
+            "Sang-Ho Kim",
+            "Yong-Seok Lee",
+            "Dong-Ik Sun",
+            "Sang-Keun Lee",
+            "Bo-Hyun Yu",
+            "Sung-Hoon Jang",
+            "Wansoo Kim",
+            "Chang-Soo Han"
+        ],
+        "publisher": "Automation in Construction",
+        "date": "2019-10",
+        "link": "https://doi.org/hcq2zz"
+    },
+    "doi:10.1007/s12541-017-0081-9": {
+        "title": "Development of real-time gait phase detection system for a lower extremity exoskeleton robot",
+        "authors": [
+            "Dong-Hwan Lim",
+            "Wan-Soo Kim",
+            "Ho-Jun Kim",
+            "Chang-Soo Han"
+        ],
+        "publisher": "International Journal of Precision Engineering and Manufacturing",
+        "date": "2017-5",
+        "link": "https://doi.org/grc53f"
+    },
+    "doi:10.1080/01691864.2015.1135080": {
+        "title": "Development of an underactuated exoskeleton for effective walking and load-carrying assist",
+        "authors": [
+            "Seungnam Yu",
+            "Heedon Lee",
+            "Wansoo Kim",
+            "Changsoo Han"
+        ],
+        "publisher": "Advanced Robotics",
+        "date": "2016-2-16",
+        "link": "https://doi.org/gjp27w"
+    },
+    "doi:10.1109/iros.2015.7354132": {
+        "title": "Development of a lower extremity Exoskeleton Robot with a quasi-anthropomorphic design approach for load carriage",
+        "authors": [
+            "Donghwan Lim",
+            "Wansoo Kim",
+            "Heedon Lee",
+            "Hojun Kim",
+            "Kyoosik Shin",
+            "Taejoon Park",
+            "JiYeong Lee",
+            "Changsoo Han"
+        ],
+        "publisher": "2015 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+        "date": "2015-9",
+        "link": "https://doi.org/hcq2z2"
+    }
+}
