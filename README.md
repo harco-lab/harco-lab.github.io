@@ -92,6 +92,7 @@ hyHarco.github.io/
 │   ├── update_publications.sh    # POSIX publication update wrapper
 │   ├── update_patents_json.py    # Update patent JSON
 │   └── templates/                # Post templates
+├── slack/                        # Slack app: news form → GitHub PR (build-excluded)
 ├── contact/                      # Contact page
 ├── equipment/                    # Equipment page
 ├── lecture/                      # Lecture page
@@ -263,6 +264,8 @@ runtime code by accident. Keep reusable behavior in cacheable files under
 3. Add member photo to `images/members/john_doe.jpg` (filename matches the slug).
 
 ### Adding a News Post
+
+> Lab members can also submit news from Slack with the **뉴스 게시물 올리기** form. After the submitter checks a preview in Slack, it opens a pull request with the post and photos for review. See [`slack/README.md`](slack/README.md).
 
 1. Create a new file in `_posts/news/` (lowercase, snake_case):
 
