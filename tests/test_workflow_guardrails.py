@@ -1,3 +1,4 @@
+import re
 import unittest
 from pathlib import Path
 
@@ -30,6 +31,21 @@ class WorkflowGuardrailTest(unittest.TestCase):
             with self.subTest(path=path):
                 workflow = Path(path).read_text(encoding="utf-8")
                 self.assertIn("timeout-minutes:", workflow)
+
+    def test_workflows_use_node24_action_versions(self):
+        minimum_majors = {
+            "actions/checkout": 7,
+            "actions/setup-python": 7,
+            "stefanzweifel/git-auto-commit-action": 7,
+            "peter-evans/create-pull-request": 8,
+        }
+        for path in sorted(Path(".github/workflows").glob("*.yml")):
+            workflow = path.read_text(encoding="utf-8")
+            for action, major in re.findall(r"uses:\s*([\w.-]+/[\w.-]+)@v(\d+)", workflow):
+                with self.subTest(path=path.name, action=action):
+                    self.assertIn(action, minimum_majors)
+                    self.assertGreaterEqual(int(major), minimum_majors[action])
+
 
 
 if __name__ == "__main__":

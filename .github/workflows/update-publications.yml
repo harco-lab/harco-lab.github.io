@@ -26,12 +26,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
-          python-version: "3.x"
+          python-version: "3.13"
 
       - name: Install publication pipeline dependencies
         run: python -m pip install requests pyyaml manubot
@@ -40,7 +40,7 @@ jobs:
         run: python scripts/update_publications.py --source "${{ inputs.source }}"
 
       - name: Commit updated publication data
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           file_pattern: publication/publications.json _data/publication_metadata_cache.json
           commit_message: "Update publication data from the pipeline"
