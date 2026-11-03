@@ -10,12 +10,16 @@ class WorkflowGuardrailTest(unittest.TestCase):
         self.assertIn("if: ${{ vars.ENABLE_GITLAB_SYNC == 'true' }}", workflow)
         self.assertIn("ENABLE_GITLAB_SYNC", workflow)
 
-    def test_github_publication_update_is_manual_only(self):
+    def test_publication_update_runs_weekly_and_opens_a_pull_request(self):
         workflow = Path(".github/workflows/update-publications.yml").read_text(encoding="utf-8")
 
         self.assertIn("workflow_dispatch:", workflow)
-        self.assertNotIn("schedule:", workflow)
+        self.assertRegex(workflow, r'cron: "\d+ \d+ \* \* \d"')
         self.assertNotIn("push:", workflow)
+        # Fetched papers can belong to someone else, so they are reviewed in a PR.
+        self.assertIn("peter-evans/create-pull-request@", workflow)
+        self.assertIn("pull-requests: write", workflow)
+        self.assertNotIn("git-auto-commit-action", workflow)
 
     def test_gitlab_sync_does_not_persist_github_credentials(self):
         workflow = Path(".github/workflows/sync_gitlab.yml").read_text(encoding="utf-8")
@@ -45,7 +49,6 @@ class WorkflowGuardrailTest(unittest.TestCase):
                 with self.subTest(path=path.name, action=action):
                     self.assertIn(action, minimum_majors)
                     self.assertGreaterEqual(int(major), minimum_majors[action])
-
 
 
 if __name__ == "__main__":
