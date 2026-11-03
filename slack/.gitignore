@@ -1,0 +1,9 @@
+# Local secrets for `slack run`
+.env
+
+# Slack CLI local dev app (per-developer) and cache
+.slack/apps.dev.json
+.slack/cache/
+
+dist
+package

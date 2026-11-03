@@ -61,6 +61,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - scripts
+  - slack
   - tests
   - tmp
   - temp

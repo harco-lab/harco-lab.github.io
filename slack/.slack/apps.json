@@ -1,0 +1,10 @@
+{
+  "apps": {
+    "T025MLXCTFG": {
+      "app_id": "A0CE6MHAYJH",
+      "team_domain": "hyu-harco",
+      "team_id": "T025MLXCTFG"
+    }
+  },
+  "default": "hyu-harco"
+}

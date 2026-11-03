@@ -209,6 +209,7 @@ class SiteHardeningTest(unittest.TestCase):
         for path in (
             ".github",
             "scripts",
+            "slack",
             "tests",
             "docs",
             "venv",
