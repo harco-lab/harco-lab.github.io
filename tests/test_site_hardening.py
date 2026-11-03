@@ -6,6 +6,7 @@ import re
 import subprocess
 import tempfile
 from struct import unpack
+from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -306,6 +307,23 @@ class SiteHardeningTest(unittest.TestCase):
                 short_pages.append(f"{path}: {text[:120]}")
 
         self.assertEqual(short_pages, [])
+
+    def test_post_author_links_point_to_existing_pages(self):
+        files = built_site_files()
+        author_links = []
+        broken_links = []
+
+        for path, html in files.items():
+            for post_info in re.findall(r'<div class="post_info">(.*?)</div>', html, re.S):
+                for href in re.findall(r'href="([^"]+)"', post_info):
+                    author_links.append(href)
+                    target = unquote(href).lstrip("/")
+                    candidates = {Path(target), Path(target + ".html"), Path(target, "index.html")}
+                    if not candidates & files.keys():
+                        broken_links.append(f"{path}: {href}")
+
+        self.assertGreater(len(author_links), 0)
+        self.assertEqual(broken_links, [])
 
     def test_post_markdown_uses_image_includes_instead_of_raw_img_tags(self):
         raw_image_tags = []

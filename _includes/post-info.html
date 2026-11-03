@@ -1,12 +1,14 @@
 <div class="post_info">
   {%- if include.author -%}
+    {%- comment -%} Link only member slugs with a profile; prose like "All Member" stays plain text. {%- endcomment -%}
+    {%- assign member_page = site.members | where: "slug", include.member | first -%}
     <span>
       <i class="fas fa-feather-alt"></i>
-      {%- if include.member -%}
-      <a href="{{ include.member | prepend: 'members/' | relative_url }}">
+      {%- if member_page -%}
+      <a href="{{ member_page.url | relative_url }}">
       {%- endif -%}
         {{- include.author -}}
-      {%- if include.member -%}
+      {%- if member_page -%}
       </a>
       {%- endif -%}
     </span>
