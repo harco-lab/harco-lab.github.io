@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
-"""Fetch latest videos from the HARCO Lab YouTube channel RSS feed and write to _data/youtube.json."""
+"""Fetch latest videos from the HARCO Lab YouTube channel RSS feed and write to _data/youtube.json.
+
+YouTube's RSS endpoint sometimes answers 404 or 5xx for hours, even for channels
+that exist. The fetch is retried, and if the feed is still unavailable or empty
+the existing data is kept and a GitHub Actions warning is printed instead of
+failing the scheduled run.
+"""
 
 import json
-import re
 import sys
+import time
 import urllib.request
-from datetime import datetime
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
@@ -13,6 +18,8 @@ CHANNEL_ID = "UCsosxxmWD4mQdyjWRXQsuyA"
 FEED_URL = f"https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}"
 OUTPUT_PATH = Path(__file__).resolve().parent.parent / "_data" / "youtube.json"
 LIMIT = 8
+# Seconds to wait before each retry.
+RETRY_DELAYS = (15, 45)
 
 NS = {
     "atom": "http://www.w3.org/2005/Atom",
@@ -22,9 +29,18 @@ NS = {
 
 
 def fetch_feed(url: str) -> str:
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=20) as resp:
-        return resp.read().decode("utf-8")
+    last_error = None
+    for attempt, delay in enumerate((0, *RETRY_DELAYS), start=1):
+        if delay:
+            time.sleep(delay)
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        try:
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                return resp.read().decode("utf-8")
+        except OSError as error:  # URLError, HTTPError and timeouts
+            last_error = error
+            print(f"Attempt {attempt} failed: {error}", file=sys.stderr)
+    raise last_error
 
 
 def parse_entries(xml_text: str):
@@ -49,10 +65,22 @@ def parse_entries(xml_text: str):
     return entries
 
 
+def warn(message: str) -> None:
+    """Print a warning that GitHub Actions shows on the run summary."""
+    print(f"::warning title=YouTube feed::{message}")
+
+
 def main():
     print(f"Fetching {FEED_URL}")
-    xml_text = fetch_feed(FEED_URL)
-    entries = parse_entries(xml_text)
+    try:
+        entries = parse_entries(fetch_feed(FEED_URL))
+    except (OSError, ET.ParseError) as error:
+        warn(f"Feed unavailable ({error}); keeping {OUTPUT_PATH.name} unchanged.")
+        return 0
+    if not entries:
+        warn(f"Feed returned no videos; keeping {OUTPUT_PATH.name} unchanged.")
+        return 0
+
     entries.sort(key=lambda e: e["published"], reverse=True)
     entries = entries[:LIMIT]
 

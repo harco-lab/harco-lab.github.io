@@ -375,7 +375,9 @@ python3 scripts/scrape_youtube.py
 The GitHub Actions workflow `.github/workflows/update-youtube.yml`
 refreshes `_data/youtube.json` every day at 04:37 KST, or when the YouTube
 scraper workflow files are pushed to `main`, and commits the data when it
-changes.
+changes. YouTube's RSS feed sometimes answers 404 or 5xx for hours; the scraper
+retries, and if the feed stays unavailable it keeps the current data and leaves
+a warning on the run instead of failing.
 
 ---
 

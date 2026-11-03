@@ -32,6 +32,8 @@ jobs:
         with:
           python-version: "3.13"
 
+      # Retries, and keeps the current data with a warning while YouTube's
+      # feed is down, so an outage on YouTube's side does not fail the run.
       - name: Run YouTube scraper
         run: python scripts/scrape_youtube.py
 
