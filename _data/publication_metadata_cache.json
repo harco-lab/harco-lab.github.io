@@ -443,5 +443,47 @@
         "publisher": "2015 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
         "date": "2015-9",
         "link": "https://doi.org/hcq2z2"
+    },
+    "doi:10.5302/j.icros.2026.25.0279": {
+        "title": "Posture Stabilization Control Framework for Lower Extremity Exoskeletons Operation in Protective-mission-oriented Tasks",
+        "authors": [
+            "Dong-gyu Lee",
+            "Hoei Jin Kim",
+            "Yushin Choi",
+            "Seongmin Ha",
+            "Joonkyu No",
+            "Soonwoong Hwang",
+            "Jae-kwan Ryu",
+            "Wansoo Kim"
+        ],
+        "publisher": "Journal of Institute of Control, Robotics and Systems",
+        "date": "2026-1-1",
+        "link": "https://doi.org/hctphp"
+    },
+    "doi:10.5302/j.icros.2025.25.0116": {
+        "title": "Development of a Terrain-specific Modified Gait Index Using the AnyBody Modeling System",
+        "authors": [
+            "Yoon-Seo Kim",
+            "Seong-Min Ha",
+            "Joon-Kyu No",
+            "Soonwoong Hwang",
+            "Wansoo Kim"
+        ],
+        "publisher": "Journal of Institute of Control, Robotics and Systems",
+        "date": "2025-8-1",
+        "link": "https://doi.org/hctphq"
+    },
+    "doi:10.5302/j.icros.2025.25.0117": {
+        "title": "Nonlinear Optimization-based Real-time Trajectory Planning for Cooperative Transport of Heterogeneous Mobile Manipulators",
+        "authors": [
+            "Seokhwan Hwang",
+            "Jihwan Oh",
+            "Jungsoo Lee",
+            "Soonwoong Hwang",
+            "Wansoo Kim"
+        ],
+        "publisher": "Journal of Institute of Control, Robotics and Systems",
+        "date": "2025-8-1",
+        "link": "https://doi.org/hctphr"
     }
 }

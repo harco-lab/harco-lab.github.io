@@ -18,6 +18,15 @@
         "doi": "10.3390/s26175678"
     },
     {
+        "title": "Posture Stabilization Control Framework for Lower Extremity Exoskeletons Operation in Protective-mission-oriented Tasks",
+        "authors": "Dong-gyu Lee, Hoei Jin Kim, Yushin Choi, Seongmin Ha, Joonkyu No, Soonwoong Hwang, Jae-kwan Ryu, Wansoo Kim",
+        "year": 2026,
+        "journal": "Journal of Institute of Control, Robotics and Systems",
+        "link": "https://doi.org/hctphp",
+        "category": "journal",
+        "doi": "10.5302/j.icros.2026.25.0279"
+    },
+    {
         "title": "방호-임무 수행을 위한 하지 외골격로봇의 자세 안정 제어 운용 프레임워크",
         "authors": "이동규， 김회진， 최유신， 하성민， 노준규， 황순웅， 유재관， 김완수",
         "year": 2026,
@@ -43,6 +52,15 @@
         "category": "conference"
     },
     {
+        "title": "Development of a Terrain-specific Modified Gait Index Using the AnyBody Modeling System",
+        "authors": "Yoon-Seo Kim, Seong-Min Ha, Joon-Kyu No, Soonwoong Hwang, Wansoo Kim",
+        "year": 2025,
+        "journal": "Journal of Institute of Control, Robotics and Systems",
+        "link": "https://doi.org/hctphq",
+        "category": "journal",
+        "doi": "10.5302/j.icros.2025.25.0116"
+    },
+    {
         "title": "Geo-LSTM: A Geometry and Temporal Feature Fusion Algorithm for Multi-Sensor 3D Localization",
         "authors": "Kai Li, Le Bao, Wansoo Kim",
         "year": 2025,
@@ -66,6 +84,15 @@
         "journal": "제어로봇시스템학회 국내학술대회 논문집, 689-690, 2025",
         "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&pagesize=100&citation_for_view=o7u_E8wAAAAJ:t6usbXjVLHcC",
         "category": "journal"
+    },
+    {
+        "title": "Nonlinear Optimization-based Real-time Trajectory Planning for Cooperative Transport of Heterogeneous Mobile Manipulators",
+        "authors": "Seokhwan Hwang, Jihwan Oh, Jungsoo Lee, Soonwoong Hwang, Wansoo Kim",
+        "year": 2025,
+        "journal": "Journal of Institute of Control, Robotics and Systems",
+        "link": "https://doi.org/hctphr",
+        "category": "journal",
+        "doi": "10.5302/j.icros.2025.25.0117"
     },
     {
         "title": "Pelvic IMU-Based Gait Phase Classification using Kernel-Embedded ELM: A Preliminary Validation Framework for Future Hemiplegic Gait Applications",
