@@ -73,7 +73,7 @@ Building an open database with sensor data.
 * [**Wansoo Kim**](/members/wansoo_kim)
 * [**Bao Leo**](/members/le_bao)
 * [**Dongcheol Shin**](/members/dongcheol_shin)
-* [**Joonhyung Kong**](/members/joonhyung_kong)
+* **Joonhyung Kong**
 
 ***
 
