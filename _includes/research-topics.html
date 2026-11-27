@@ -1,0 +1,20 @@
+{%- comment -%}
+  Research area cards from _data/research_topics.yaml.
+  Pass describe=true to show each area's one-line description.
+{%- endcomment -%}
+<div class="home_topics_grid">
+  {%- for topic in site.data.research_topics %}
+  <a class="topic_card" href="{{ topic.url | relative_url }}">
+    <div class="topic_card_image">
+      <img src="{{ topic.image | relative_url }}" alt="{{ topic.title }}" loading="lazy" decoding="async" />
+    </div>
+    <div class="topic_card_body">
+      <h3 class="topic_card_title">{{ topic.title }}</h3>
+      {%- if include.describe %}
+      <p class="topic_card_desc">{{ topic.description }}</p>
+      {%- endif %}
+      <span class="topic_card_more">› Find out more</span>
+    </div>
+  </a>
+  {%- endfor %}
+</div>

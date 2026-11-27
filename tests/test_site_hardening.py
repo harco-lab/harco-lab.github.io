@@ -275,6 +275,7 @@ class SiteHardeningTest(unittest.TestCase):
             "_includes/portrait.html",
             "_includes/portrait-spc.html",
             "_includes/project_grid.html",
+            "_includes/research-list.html",
         ):
             with self.subTest(path=path):
                 include = read_repo_file(path)

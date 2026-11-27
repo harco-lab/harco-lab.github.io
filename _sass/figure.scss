@@ -14,6 +14,11 @@
     // box-shadow: $shadow;
   }
 
+  // Without an explicit width, keep a large figure from filling the page
+  .figure_image img:not([style*="width"]) {
+    max-height: 480px;
+  }
+
   .figure_caption {
     margin-top: 10px;
     margin-bottom: 0;
