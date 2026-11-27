@@ -17,8 +17,8 @@ The session concluded with an open discussion on future collaboration possibilit
 
 
 <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 1em; margin-bottom: 1em;">
-{% include figure.html image="images/news/250429_eurecat/eurecat_1.jpg" width="50%" %}
-{% include figure.html image="images/news/250429_eurecat/eurecat_2.jpg" width="50%" %}
+{% include figure.html image="images/news/250429_eurecat/eurecat_1.jpg" width="75%" %}
+{% include figure.html image="images/news/250429_eurecat/eurecat_2.jpg" width="75%" %}
 </div>
 ***
                       
