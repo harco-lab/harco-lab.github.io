@@ -1,15 +1,13 @@
 ---
+# Save as _posts/research/<robot_manipulation|exoskeleton|robot_learning>/YYYY-MM-DD-<topic>.md
 title: An Efficient Robot Control Framework Using the Model Context Protocol
-image: images/research/jungsoo_5_main.png
+image: images/research/robot_learning/mcp_robot_control/main.png
 tags:
   - Robot Intelligence
   - Artificial Intelligence Application System
   - Model Context Protocol
-  
 author: Jungsoo Lee
-member: Jungsoo-Lee
-group: ai
-
+member: jungsoo_lee
 ---
 **Goal** 
 The objective of this study is to propose an efficient and generalizable robot control framework that transforms natural language commands into structured MCP messages, enabling clear, consistent, and scalable control across diverse robot platforms.
@@ -31,14 +29,14 @@ To validate the effectiveness of the proposed framework, simulation experiments 
 {% capture col1 %}
 {%
   include figure.html
-  image="images/research/jungsoo_5_1.png"
+  image="images/research/robot_learning/mcp_robot_control/1.png"
   
 %}
 {% endcapture %}
 {% capture col2 %}
 {%
   include figure.html
-  image="images/research/jungsoo_5_2.png"
+  image="images/research/robot_learning/mcp_robot_control/2.png"
   
 %}
 {% endcapture %}
@@ -47,6 +45,6 @@ To validate the effectiveness of the proposed framework, simulation experiments 
 
 {%
   include figure.html
-  image="images/research/jungsoo_5_3.png"
+  image="images/research/robot_learning/mcp_robot_control/3.png"
   
 %}

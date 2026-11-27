@@ -63,12 +63,19 @@ Required frontmatter keys:
 - Numbered series: append `_1`, `_2`, … starting from `1` *even for the first post* — do not leave the first one unnumbered if there will be a `_2`.
 - For events/seminars, use a short kebab/snake identifier of the event, not a full sentence.
 
+Research posts are the exception: they go in a folder for their research area and are named by topic, without the category prefix or a number.
+
+```text
+_posts/research/<robot_manipulation|exoskeleton|robot_learning>/YYYY-MM-DD-<topic>.md
+```
+
+The folder sets the research area, so research posts have no `group:` field.
+
 #### Good (posts)
 
 ```text
 2025-05-22-news_icra2025.md
-2025-01-02-research_jungsoo_lee_1.md
-2025-01-02-research_jungsoo_lee_2.md
+research/robot_learning/2026-01-04-language_to_task_maps.md
 2024-04-01-project_handshaking.md
 2025-09-29-news_thomas_kwok_seminar.md
 ```
@@ -96,7 +103,7 @@ All images live under `images/<category>/`. The category should match the consum
 ```text
 images/members/      # member portraits
 images/news/         # news post images
-images/research/     # research post images
+images/research/     # research post images, one folder per area and topic
 images/project/      # project post images
 images/equipment/    # equipment showcase
 images/lab/          # lab/group photos
@@ -111,12 +118,13 @@ images/event_img/    # event banners
 - Extension lowercase: `.png`, `.jpg`, `.gif` (not `.JPG`, `.PNG`).
 - No Korean filenames — use the romanized member slug.
 - Member-tied images: `<member-slug-lower>_<n>.png` and `<member-slug-lower>_main.png` for the post's hero image.
+- Research images: `images/research/<area>/<topic>/main.png` for the card image and `1.png`, `2.png`, … for figures, where `<area>/<topic>` matches the post's folder and filename.
 
 #### Good (images)
 
 ```text
-images/research/jungsoo_lee_1.png
-images/research/jungsoo_lee_main.png
+images/research/robot_learning/language_to_task_maps/main.png
+images/research/robot_learning/language_to_task_maps/1.png
 images/members/wansoo_kim.jpg
 images/news/icra2024_1.jpg
 ```
@@ -125,8 +133,7 @@ images/news/icra2024_1.jpg
 
 ```text
 images/members/김완수교수님.png       # Korean filename
-images/research/dc_research_2.png   # initials prefix (use full slug)
-images/research/keunwoo_main.png    # romanization differs from member slug (Geunwoo)
+images/research/dc_research_2.png   # research image outside its area/topic folder
 images/news/IROS_2022_kyoto.jpg     # mixed case
 images/christmas.png.sb-...         # editor temp file
 ```
@@ -144,7 +151,7 @@ images/christmas.png.sb-...         # editor temp file
 1. Confirm the member slug exists in `_members/`. If not, create the profile first.
 2. Add images to `images/<category>/` using the slug-prefixed naming above.
 3. Create the post file under `_posts/<category>/` with the dated, snake_case filename.
-4. Fill frontmatter (`title`, `image`, `author`, `member`, `group`, `tags` if applicable).
+4. Fill frontmatter (`title`, `image`, `author`, `member`, `group`, `tags` if applicable). Research posts take no `group`; their folder sets it.
 5. Run `bundle exec jekyll build` (or `./scripts/start.sh`) and confirm no warnings.
 
 ---

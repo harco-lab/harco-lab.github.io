@@ -1,13 +1,13 @@
 # Research areas shown as cards on the homepage and the Research page.
 - title: Robot Manipulation
   url: /research/mobile_manipulator/
-  image: /images/research/likai_main.png
+  image: /images/research/robot_manipulation/intent_driving_mobile_manipulator/main.png
   description: Control and planning for manipulators and mobile manipulators that work safely alongside people.
 - title: Exoskeleton Robot
   url: /research/exoskeleton_robot/
-  image: /images/research/jihwan_main.png
+  image: /images/research/exoskeleton/bidirectional_pulley_exosuit/main.png
   description: Adaptive control and soft, lightweight hardware for exoskeletons that assist human movement.
 - title: Robot Learning
   url: /research/artificial_intelligence/
-  image: /images/research/ai_vr_teleoperation.jpg
+  image: /images/research/robot_learning/topic_card.jpg
   description: Imitation learning, reinforcement learning and LLM-based control for robots that work with people.

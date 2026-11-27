@@ -10,4 +10,4 @@ In our lab, research on robot manipulators and mobile manipulators is being cond
 
 ## Our Research
 
-{% include research-list.html group="mobile_manipulator" %}
+{% include research-list.html group="robot_manipulation" %}

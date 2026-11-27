@@ -10,4 +10,4 @@ We conduct robot learning research for human-robot collaboration. Our work focus
 
 ## Our Research
 
-{% include research-list.html group="ai" %}
+{% include research-list.html group="robot_learning" %}
