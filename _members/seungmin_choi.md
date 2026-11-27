@@ -1,6 +1,6 @@
 ---
 name: Seungmin Choi
-image: images/members/seungmin_choi.png
+image: images/members/seungmin_choi.jpg
 description: Ph.D. Researcher
 aliases:
  - min9317love

@@ -37,25 +37,3 @@ And [Joonhyun Kim](/members/joonhyun_kim), [Jungsoo Lee](/members/jungsoo_lee), 
 
 
 ***
-
-
-
-
-
-<!-- {% capture col1 %}
-{%
-  include figure.html
-  image="images/news/240221_kros_2024_presentation/ro-man2023_1.jpg"
-  caption=""
-%}
-{% endcapture %}
-{% capture col2 %}
-{%
-  include figure.html
-  image="images/news/240221_kros_2024_presentation/ro-man2023_2.jpg"
-  caption=""
-%}
-{% endcapture %}
-{% include two-col.html col1=col1 col2=col2 %} -->
-
-

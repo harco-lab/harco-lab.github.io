@@ -1,6 +1,6 @@
 ---
 name: Seongmin Ha
-image: images/members/seongmin_ha.png
+image: images/members/seongmin_ha.jpg
 description: Ph.D. Researcher
 aliases:
   - seongmin

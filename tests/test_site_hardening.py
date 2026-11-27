@@ -99,6 +99,21 @@ def read_repo_file(path):
     return (ROOT / path).read_text(encoding="utf-8")
 
 
+@lru_cache(maxsize=None)
+def directory_entries(directory):
+    return frozenset(entry.name for entry in directory.iterdir())
+
+
+def exists_with_exact_case(relative_path):
+    """Match every path part letter for letter: macOS ignores case, GitHub Pages does not."""
+    path = ROOT
+    for part in Path(relative_path).parts:
+        if not path.is_dir() or part not in directory_entries(path):
+            return False
+        path = path / part
+    return True
+
+
 @lru_cache(maxsize=1)
 def built_site_files():
     with tempfile.TemporaryDirectory() as destination:
@@ -338,7 +353,6 @@ class SiteHardeningTest(unittest.TestCase):
         for path in (
             "images/equipment/equipments_1.png",
             "images/equipment/equipments_2.png",
-            "images/equipment/equipments_3.png",
             "images/equipment/equipments_4.png",
             "images/members/jeongmok_kim.jpg",
             "images/members/sooin_choi.jpg",
@@ -419,7 +433,7 @@ class SiteHardeningTest(unittest.TestCase):
     def test_original_image_basenames_are_preserved_when_only_extensions_change(self):
         for path in (
             "images/event_img/icra2025/ICRA-ATL-logo.webp",
-            "images/event_img/icra2025/IROS-LOGO.svg",
+            "images/event_img/iros2023/IROS-LOGO.svg",
             "images/event_img/sample/IROS_thumbnail.png",
             "images/news/210427_Young Robot Engineer/kuka_innovation.png",
             "images/news/220822_biorob2022/Biorob2022_ws.jpg",
@@ -432,13 +446,12 @@ class SiteHardeningTest(unittest.TestCase):
             "images/news/260203_kroc2026/Tutorial_Jaegyun-Park.jpg",
         ):
             with self.subTest(path=path):
-                self.assertTrue((ROOT / path).exists())
+                self.assertTrue(exists_with_exact_case(path))
 
     def test_referenced_image_assets_exist(self):
         for relative_path in referenced_image_paths():
-            referenced_path = ROOT / relative_path
             with self.subTest(image=str(relative_path)):
-                self.assertTrue(referenced_path.exists())
+                self.assertTrue(exists_with_exact_case(relative_path))
 
     def test_readme_documents_current_verification_and_asset_rules(self):
         readme = read_repo_file("README.md")
