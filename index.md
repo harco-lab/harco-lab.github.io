@@ -18,11 +18,11 @@ layout: default
 
 <div class="home_intro">
   <p class="home_lead">
-  We study how humans and robots can work together — physically, cognitively, and reliably. Our research spans Physical Human-Robot Interaction (pHRI), shared and whole-body control, ergonomics and human factors, haptic and tactile sensing, machine learning for robotics, and powered exoskeletons.
+  We study how humans and robots can work together safely and reliably, in both physical and cognitive tasks.<br>
+  Our research spans physical human-robot interaction (pHRI), shared and whole-body control, ergonomics and human factors, haptic and tactile sensing, powered exoskeletons, and robot learning.
   </p>
+  <p class="home_lead home_cta">Interested in joining HARCO Lab? Email your CV to <a href="mailto:wansookim+app@hanyang.ac.kr">wansookim+app@hanyang.ac.kr</a>.</p>
 </div>
-
-<div class="home_cta">Interested in joining the lab? Send your CV to <a href="mailto:wansookim+app@hanyang.ac.kr">wansookim+app@hanyang.ac.kr</a>.</div>
 
 {% include home-topics-strip.html %}
 
