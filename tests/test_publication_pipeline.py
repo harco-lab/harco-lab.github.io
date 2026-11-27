@@ -150,6 +150,57 @@ class PublicationPipelineTest(unittest.TestCase):
             "doi:10.1109/LRA.2024.1234567",
         )
 
+    def test_venues_are_categorized_by_name(self):
+        from scripts.publication_pipeline import categorize_publication
+
+        expected = {
+            "제어로봇시스템학회 국내학술대회 논문집, 1048-1049, 2025": "conference",
+            "대한기계학회 춘추학술대회, 1095-1095, 2024": "conference",
+            "한국정밀공학회 학술발표대회 논문집, 43-44, 2024": "conference",
+            "Sith National Congress of Bioengineering, 2018": "conference",
+            "Robotics: Science and Systems XXI, 2025": "conference",
+            "제어로봇시스템학회 논문지 31 (8), 900-905, 2025": "journal",
+            "로봇학회 논문지 20 (1), 112-119, 2025": "journal",
+            "한국정밀공학회지 33 (3), 173-181, 2016": "journal",
+            "The Journal of Korea Robotics Society 20 (1), 112-119, 2025": "journal",
+            "Journal of King Saud University": "journal",
+            "한양대학교, 2015": "thesis",
+            "Hanyang University, 2020": "thesis",
+            "arXiv preprint arXiv:2501.01234, 2025": "arxiv",
+        }
+
+        for venue, category in expected.items():
+            with self.subTest(venue=venue):
+                self.assertEqual(categorize_publication(venue), category)
+
+    def test_hidden_overrides_drop_duplicate_scholar_entries(self):
+        from scripts.publication_pipeline import merge_publications
+
+        publications = merge_publications(
+            [
+                {"title": "English Title", "authors": "A Author", "year": 2025, "journal": "Journal 1 (1), 1-2"},
+                {"title": "한글 제목", "authors": "에이 저자", "year": 2025, "journal": "논문지 1 (1), 1-2"},
+            ],
+            [{"match_title": "한글 제목", "hide": True}],
+        )
+
+        self.assertEqual([publication["title"] for publication in publications], ["English Title"])
+
+    def test_duplicate_rows_keep_the_doi_of_the_existing_entry(self):
+        from scripts.publication_pipeline import merge_publications
+
+        publications = merge_publications(
+            [
+                {"title": "Same Paper", "authors": "A Author", "year": 2024, "journal": "Journal 1 (1)", "link": "https://scholar.example"},
+                {"title": "Same paper", "authors": "Alice Author", "year": 2024, "journal": "Journal", "doi": "10.1000/example"},
+            ],
+            [],
+        )
+
+        self.assertEqual(len(publications), 1)
+        self.assertEqual(publications[0]["doi"], "10.1000/example")
+        self.assertEqual(publications[0]["authors"], "A Author")
+
     def test_publications_are_deduplicated_and_sorted_by_year_then_title(self):
         from scripts.publication_pipeline import merge_publications
 

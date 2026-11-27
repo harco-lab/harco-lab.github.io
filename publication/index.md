@@ -61,7 +61,7 @@ nav:
                 appendBreak(details);
 
                 const category = (pub.category || 'publication').toString();
-                const categoryLabel = category.charAt(0).toUpperCase() + category.slice(1);
+                const categoryLabel = category === 'arxiv' ? 'arXiv' : category.charAt(0).toUpperCase() + category.slice(1);
                 const categoryBadge = document.createElement('span');
                 categoryBadge.classList.add('publication-category', category.toLowerCase());
                 categoryBadge.textContent = categoryLabel;

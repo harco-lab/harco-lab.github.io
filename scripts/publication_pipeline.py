@@ -12,12 +12,16 @@ DEFAULT_OUTPUT_PATH = Path("publication/publications.json")
 DEFAULT_OVERRIDES_PATH = Path("_data/publication_overrides.yaml")
 DEFAULT_CACHE_PATH = Path("_data/publication_metadata_cache.json")
 
-CONTROL_FIELDS = {"match_title", "source", "id", "add"}
+CONTROL_FIELDS = {"match_title", "source", "id", "add", "hide"}
 CONFERENCE_KEYWORDS = (
     "conference",
     "proceedings",
     "symposium",
     "workshop",
+    "congress",
+    "science and systems",  # RSS
+    "학술대회",
+    "학술발표대회",
     "icra",
     "iros",
     "iccas",
@@ -26,6 +30,8 @@ CONFERENCE_KEYWORDS = (
     "biorob",
     "ur,",
 )
+# Scholar lists a degree thesis under the university name alone.
+THESIS_VENUE_ENDINGS = ("대학교", "대학원", "university")
 
 CitationLookup = Callable[[str], dict[str, Any]]
 
@@ -49,6 +55,11 @@ def parse_year(value: Any) -> int:
 
 def categorize_publication(venue: Any) -> str:
     venue_text = clean_text(venue).casefold()
+    venue_name = venue_text.split(",", 1)[0].strip()
+    if "arxiv" in venue_text:
+        return "arxiv"
+    if venue_name.endswith(THESIS_VENUE_ENDINGS) and "journal" not in venue_name:
+        return "thesis"
     if any(keyword in venue_text for keyword in CONFERENCE_KEYWORDS):
         return "conference"
     return "journal"
@@ -151,6 +162,24 @@ def _lookup_citation(
     return citation
 
 
+def _combine_duplicates(publications: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Keep the first row per title and fill its empty fields from later copies.
+
+    A fresh Scholar row has no DOI; the existing row for the same paper keeps it,
+    so DOI enrichment still applies after a sync.
+    """
+    combined: dict[str, dict[str, Any]] = {}
+    for publication in publications:
+        key = normalize_title(publication.get("title"))
+        if not key:
+            continue
+        kept = combined.setdefault(key, dict(publication))
+        for field, value in publication.items():
+            if kept.get(field) in (None, "") and value not in (None, ""):
+                kept[field] = value
+    return list(combined.values())
+
+
 def merge_publications(
     publications: list[dict[str, Any]],
     overrides: list[dict[str, Any]],
@@ -163,14 +192,13 @@ def merge_publications(
     seen: set[str] = set()
     merged: list[dict[str, Any]] = []
 
-    for raw_publication in publications:
+    for raw_publication in _combine_duplicates(publications):
         key = normalize_title(raw_publication.get("title"))
-        if not key or key in seen:
-            continue
-
         seen.add(key)
         base = _normalize_publication(raw_publication)
         override = overrides_by_title.get(key, {})
+        if override.get("hide"):
+            continue
         lookup_base = {**base, **override}
         source_id = source_id_from_publication(lookup_base)
         citation_fields = _citation_to_publication_fields(_lookup_citation(source_id, citation_lookup, cache))
