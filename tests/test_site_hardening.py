@@ -230,16 +230,23 @@ class SiteHardeningTest(unittest.TestCase):
         self.assertIn("bundle install", script)
         self.assertLess(script.index("bundle check"), script.index("bundle install"))
 
-    def test_homepage_prioritizes_only_the_first_hero_slide_image(self):
+    def test_homepage_prioritizes_only_the_hero_mosaic_image(self):
         homepage = read_repo_file("index.md")
 
-        self.assertIn('src="/images/main_img/1.png" alt="HARCO Lab" fetchpriority="high" decoding="async"', homepage)
-        for image in ("2.jpg", "3.png", "4.jpg"):
-            with self.subTest(image=image):
-                self.assertIn(
-                    f'src="/images/main_img/{image}" alt="HARCO Lab" loading="lazy" decoding="async"',
-                    homepage,
-                )
+        self.assertRegex(
+            homepage,
+            r'<img class="home_hero_mosaic" src="/images/main_img/hero_mosaic\.jpg" alt=""[^>]*'
+            r'fetchpriority="high" decoding="async">',
+        )
+        self.assertEqual(homepage.count('fetchpriority="high"'), 1)
+
+    def test_homepage_hero_is_a_static_mosaic_without_a_carousel(self):
+        homepage = read_repo_file("index.md")
+
+        self.assertNotIn("swiper", homepage.lower())
+        self.assertFalse((ROOT / "js" / "home-hero.js").exists())
+        self.assertIn('class="home_hero_logo" src="/images/common/harco_logo_transparent.png" alt="HARCO Lab"', homepage)
+        self.assertIn('<h1 class="home_hero_title">', homepage)
 
     def test_shared_image_includes_use_async_decoding_for_lazy_images(self):
         for path in (
@@ -508,7 +515,6 @@ class SiteHardeningTest(unittest.TestCase):
             if path == Path("index.html"):
                 expected_local_scripts = expected_site_scripts + [
                     "/js/home-youtube.js",
-                    "/js/home-hero.js",
                 ]
 
             if local_scripts != expected_local_scripts:
@@ -591,17 +597,16 @@ class SiteHardeningTest(unittest.TestCase):
             "homepage CSS should be bundled into css/all.css",
         )
         self.assertFalse(
-            any("new Swiper" in script or "home_youtube_card" in script for script in inline_scripts),
+            any("home_youtube_card" in script for script in inline_scripts),
             "homepage JavaScript should be loaded from cacheable files",
         )
         self.assertIn(".home_hero", site_css)
 
         scripts = script_links(homepage)
         self.assertIn("/js/home-youtube.js", scripts)
-        self.assertIn("/js/home-hero.js", scripts)
-        self.assertLess(
-            scripts.index("https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper-bundle.min.js"),
-            scripts.index("/js/home-hero.js"),
+        self.assertFalse(
+            any("swiper" in src.lower() for src in scripts + stylesheet_links(homepage)),
+            "the static hero should not load the Swiper carousel",
         )
 
 

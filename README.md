@@ -436,12 +436,36 @@ Refresh `_data/youtube.json` from the lab YouTube channel RSS feed.
 Convert the patent list in `assets/source/HARCO_patent_list.xlsx`
 into JSON for the publications page.
 
+### `build_hero_mosaic.py`
+
+Rebuild the homepage hero background (`images/main_img/hero_mosaic.jpg`), a grid
+of small research and equipment photos:
+
+```bash
+python3 scripts/build_hero_mosaic.py
+```
+
+To change which photos appear, edit the `SOURCES` list at the top of the script
+and run it again. Each photo is used once, so the list needs at least as many
+entries as the grid has tiles (10 x 5 = 50). Use photos and renders of robots,
+equipment and experiments; leave out charts, diagrams, logos, portraits and news
+photos. Photos should fill the frame, because white areas look like holes in the
+grid: the script trims white frames and refuses tiles that are mostly white. For
+a product shot on white, set `studio=True` to remove the white background and
+place the object on a grey backdrop. Each entry can take a crop `box` to cut
+brand logos or captions; on a studio shot, `erase` paints over a logo without
+cropping away part of the object. Source images that are not on the site, such as
+frames from the lab's YouTube videos, live in `assets/source/hero_mosaic/`,
+which is not published. The washed-out look comes from
+CSS in `_sass/home.scss`, so the image itself stays in full colour.
+
 **Requirements:**
 
 - Python 3
 - `local_publication_sync.py` creates a local virtual environment and installs `requests`, `pyyaml`, and `manubot`
 - `.sh` helper scripts are for POSIX shells; use the Python entrypoints for macOS, Windows, and Linux compatibility
 - `update_patents_json.py` requires `openpyxl`
+- `build_hero_mosaic.py` requires `pillow`
 
 ---
 
