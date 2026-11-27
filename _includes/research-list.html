@@ -1,0 +1,29 @@
+{%- comment -%}
+  Research posts of one group as a grid of cards, newest year first.
+  Usage: {% include research-list.html group="ai" %}
+{%- endcomment -%}
+{%- assign posts = site.posts | where: "group", include.group -%}
+{%- assign years = posts | group_by_exp: "p", "p.date | date: '%Y'" | sort: "name" | reverse -%}
+{::nomarkdown}
+{%- for year in years -%}
+  {%- if years.size > 1 -%}
+  <h3 id="{{ year.name }}">{{ year.name }}</h3>
+  {%- endif -%}
+  <div class="research_grid">
+    {%- assign items = year.items | sort: "date" | reverse -%}
+    {%- for post in items -%}
+    <a class="research_card" href="{{ post.url | relative_url }}">
+      <span class="research_card_image">
+        <img src="{{ post.image | relative_url }}" alt="" loading="lazy" decoding="async">
+      </span>
+      <span class="research_card_body">
+        <span class="research_card_title">{{ post.title }}</span>
+        {%- if post.author -%}
+        <span class="research_card_author">{{ post.author }}</span>
+        {%- endif -%}
+      </span>
+    </a>
+    {%- endfor -%}
+  </div>
+{%- endfor -%}
+{:/}

@@ -39,8 +39,9 @@ File names and front matter: [CONVENTIONS.md](CONVENTIONS.md).
 | --- | --- |
 | Member | `_members/firstname_lastname.md` |
 | Member photo | `images/members/firstname_lastname.jpg` |
-| Post | `_posts/<news\|research\|project\|workshop>/YYYY-MM-DD-<category>_<slug>.md` |
-| Post images | `images/<category>/` |
+| Post | `_posts/<news\|project\|workshop>/YYYY-MM-DD-<category>_<slug>.md` |
+| Research post | `_posts/research/<robot_manipulation\|exoskeleton\|robot_learning>/YYYY-MM-DD-<topic>.md` |
+| Post images | `images/<category>/`, research: `images/research/<area>/<topic>/` |
 
 Member `tier`: `pi`, `research_professor`, `second` (postdoc), `third`
 (Ph.D.), `fourth` (M.S.), `fifth` (B.S.), `alumni`.

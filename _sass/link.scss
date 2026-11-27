@@ -48,21 +48,4 @@ a:hover {
     }
   }
 
-  &[data-style="button_research"] {
-    max-width: calc(100% - 10px - 10px);
-    min-height: 40px;
-    margin: 10px;
-    padding: 8px 18px;
-    border-radius: 0;
-    background: $surface;
-    color: $accent;
-    border: 1px solid $accent;
-    font-family: $sans;
-    font-weight: $medium;
-
-    &:hover {
-      background: $accent;
-      color: $white;
-    }
-  }
 }

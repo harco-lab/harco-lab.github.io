@@ -57,3 +57,77 @@
     }
   }
 }
+
+/* Research pages: a grid of cards styled like the homepage topic cards */
+.research_grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 16px 0 40px;
+}
+.research_card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: #ffffff;
+  color: #1d1d1b;
+  text-decoration: none;
+  border: 1px solid #d6d6d4;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.research_card:hover {
+  border-color: #1f3b6e;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(17, 35, 73, 0.08);
+}
+/* Thumbnails are often diagrams, so show the whole figure */
+.research_card_image {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-bottom: 1px solid #ececea;
+  background: #ffffff;
+}
+.research_card_image img {
+  position: absolute;
+  inset: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  object-fit: contain;
+}
+.research_card_body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px 16px;
+}
+.research_card_title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #1d1d1b;
+  transition: color 0.15s ease;
+}
+.research_card:hover .research_card_title {
+  color: #1f3b6e;
+}
+.research_card_author {
+  font-size: 0.82rem;
+  color: #4a4a48;
+}
+@media (prefers-reduced-motion: reduce) {
+  .research_card { transition: none; }
+  .research_card:hover { transform: none; }
+}
+@media (max-width: 800px) {
+  .research_grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+}
+@media (max-width: 520px) {
+  .research_grid { grid-template-columns: 1fr; }
+}

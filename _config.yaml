@@ -32,6 +32,19 @@ defaults:
       type: "posts"
     values:
       layout: post
+  # research posts: the folder sets the research area
+  - scope:
+      path: "_posts/research/robot_manipulation"
+    values:
+      group: robot_manipulation
+  - scope:
+      path: "_posts/research/exoskeleton"
+    values:
+      group: exoskeleton
+  - scope:
+      path: "_posts/research/robot_learning"
+    values:
+      group: robot_learning
 
 # collections
 collections:

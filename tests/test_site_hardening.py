@@ -275,6 +275,7 @@ class SiteHardeningTest(unittest.TestCase):
             "_includes/portrait.html",
             "_includes/portrait-spc.html",
             "_includes/project_grid.html",
+            "_includes/research-list.html",
         ):
             with self.subTest(path=path):
                 include = read_repo_file(path)
@@ -447,6 +448,29 @@ class SiteHardeningTest(unittest.TestCase):
         ):
             with self.subTest(path=path):
                 self.assertTrue(exists_with_exact_case(path))
+
+    def test_research_posts_live_in_area_folders_with_topic_names(self):
+        areas = {"robot_manipulation", "exoskeleton", "robot_learning"}
+        posts = sorted((ROOT / "_posts" / "research").rglob("*.md"))
+        self.assertTrue(posts)
+        for path in posts:
+            relative = path.relative_to(ROOT / "_posts" / "research")
+            with self.subTest(post=str(relative)):
+                self.assertEqual(len(relative.parts), 2)
+                self.assertIn(relative.parts[0], areas)
+                self.assertRegex(path.stem, r"^\d{4}-\d{2}-\d{2}-[a-z0-9]+(?:_[a-z0-9]+)*$")
+                self.assertNotRegex(path.stem, r"_\d+$")
+                self.assertNotIn("\ngroup:", path.read_text(encoding="utf-8").split("\n---", 1)[0])
+
+    def test_research_images_live_in_their_post_folder(self):
+        areas = {"robot_manipulation", "exoskeleton", "robot_learning"}
+        for path in sorted((ROOT / "images" / "research").rglob("*")):
+            if not path.is_file():
+                continue
+            relative = path.relative_to(ROOT / "images" / "research")
+            with self.subTest(image=str(relative)):
+                self.assertIn(relative.parts[0], areas)
+                self.assertLessEqual(len(relative.parts), 3)
 
     def test_referenced_image_assets_exist(self):
         for relative_path in referenced_image_paths():
