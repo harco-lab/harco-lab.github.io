@@ -45,10 +45,22 @@ class WorkflowGuardrailTest(unittest.TestCase):
         }
         for path in sorted(Path(".github/workflows").glob("*.yml")):
             workflow = path.read_text(encoding="utf-8")
-            for action, major in re.findall(r"uses:\s*([\w.-]+/[\w.-]+)@v(\d+)", workflow):
+            for action, major in re.findall(
+                r"uses:\s*([\w.-]+/[\w.-]+)@(?:v|[0-9a-f]{40}\s+#\s*v)(\d+)", workflow
+            ):
                 with self.subTest(path=path.name, action=action):
                     self.assertIn(action, minimum_majors)
                     self.assertGreaterEqual(int(major), minimum_majors[action])
+
+    def test_third_party_actions_are_pinned_to_a_commit(self):
+        # A moved tag must not run new code with this repository's write token.
+        for path in sorted(Path(".github/workflows").glob("*.yml")):
+            workflow = path.read_text(encoding="utf-8")
+            for action, ref in re.findall(r"uses:\s*([\w.-]+/[\w.-]+)@(\S+)", workflow):
+                if action.startswith("actions/"):
+                    continue
+                with self.subTest(path=path.name, action=action):
+                    self.assertRegex(ref, r"^[0-9a-f]{40}$")
 
 
 if __name__ == "__main__":
