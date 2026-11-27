@@ -19,7 +19,7 @@ We thank Dr. Kim for sharing his expertise and look forward to continued engagem
 
 
 <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 1em; margin-bottom: 1em;">
-{% include figure.html image="images/news/250507_etri_seminar/ETRI_1.jpg" width="80%" %}
+{% include figure.html image="images/news/250507_etri_seminar/etri_1.jpg" width="80%" %}
 </div>
 ***
                       
