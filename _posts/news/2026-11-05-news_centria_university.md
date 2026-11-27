@@ -18,7 +18,7 @@ During the visit, HARCO Lab introduced its ongoing research projects and demonst
 The visiting researchers had the opportunity to observe the robotic systems in operation and engage in technical discussions with HARCO Lab members. Both sides shared insights into their research activities and exchanged perspectives on current challenges and future directions in robotics.
 
 <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 1em; margin-bottom: 1em;">
-{% include figure.html image="images/news/261105_centria_university/2.png" width="80%" %}
+{% include figure.html image="images/news/261105_centria_university/2.jpg" width="80%" %}
 </div>
 
 Through this visit, **HARCO Lab and Centria University of Applied Sciences** strengthened their academic connections and explored opportunities for future research collaboration in robotics and intelligent systems.

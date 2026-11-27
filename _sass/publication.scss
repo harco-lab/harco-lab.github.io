@@ -48,6 +48,15 @@
   background-color: #007bff;
 }
 
-.publication-category.pending {
+.publication-category.pending,
+.publication-category.thesis {
   background-color: #6c757d;
+}
+
+.publication-category.arxiv {
+  background-color: #b31b1b; /* arXiv red */
+}
+
+.publication-category.book {
+  background-color: #6f42c1;
 }

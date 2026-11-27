@@ -1,5 +1,13 @@
 [
     {
+        "title": "A Hybrid Bidirectional Pulley Module (HBPM) for Cable-Driven Soft Exosuits",
+        "authors": "J Oh, S Ha, I Gil, D Lee, J No, S Hwang, W Kim",
+        "year": 2026,
+        "journal": "2026 IEEE/ASME International Conference on Advanced Intelligent Mechatronics …, 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&pagesize=100&citation_for_view=o7u_E8wAAAAJ:9vf0nzSNQJEC",
+        "category": "conference"
+    },
+    {
         "title": "A lightweight tendon-driven hand exoskeleton with dual-safety mechanism for grasp assistance",
         "authors": "Wenqi Li, Le Bao, Wenbin Dong, Wansoo Kim",
         "year": 2026,
@@ -16,6 +24,46 @@
         "link": "https://doi.org/hcq2xz",
         "category": "journal",
         "doi": "10.3390/s26175678"
+    },
+    {
+        "title": "Executor-aware Candidate Selection via a Feasibility Certificate",
+        "authors": "S Choi, S Hwang, W Kim",
+        "year": 2026,
+        "journal": "arXiv preprint arXiv:2609.36597, 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&pagesize=100&citation_for_view=o7u_E8wAAAAJ:5awf1xo2G04C",
+        "category": "arxiv"
+    },
+    {
+        "title": "From Language to Task Maps: Compiling Semantic Relations While Preserving Task-Relevant Freedom",
+        "authors": "J Park, J Lee, J Lee, S Hwang, W Kim",
+        "year": 2026,
+        "journal": "arXiv preprint arXiv:2609.34412, 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&pagesize=100&citation_for_view=o7u_E8wAAAAJ:WqliGbK-hY8C",
+        "category": "arxiv"
+    },
+    {
+        "title": "Physical Ergonomics in Robotics",
+        "authors": "P Maurice, L Peternel, W Kim, S Crea, V Vashista, G Barresi, A Ranavolo, ...",
+        "year": 2026,
+        "journal": "Ergonomics in Robotics: Advances and Innovations: Volume 1, 23-48, 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&pagesize=100&citation_for_view=o7u_E8wAAAAJ:SdhP9T11ey4C",
+        "category": "book"
+    },
+    {
+        "title": "Scale-Invariant Manipulability Shape Tracking Across Heterogeneous Manipulators",
+        "authors": "G Kwon, D Lee, K Li, S Hwang, W Kim",
+        "year": 2026,
+        "journal": "arXiv preprint arXiv:2609.36784, 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&pagesize=100&citation_for_view=o7u_E8wAAAAJ:ye4kPcJQO24C",
+        "category": "arxiv"
+    },
+    {
+        "title": "Spatial and Semantic Reasoning for LLM-Driven Robot Navigation via MCP",
+        "authors": "J Lee, J Park, W Kim",
+        "year": 2026,
+        "journal": "arXiv preprint arXiv:2609.27340, 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&pagesize=100&citation_for_view=o7u_E8wAAAAJ:LjlpjdlvIbIC",
+        "category": "arxiv"
     },
     {
         "title": "방호-임무 수행을 위한 하지 외골격로봇의 자세 안정 제어 운용 프레임워크",
@@ -57,15 +105,15 @@
         "year": 2025,
         "journal": "제어로봇시스템학회 국내학술대회 논문집, 1048-1049, 2025",
         "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&pagesize=100&citation_for_view=o7u_E8wAAAAJ:AXPGKjj_ei8C",
-        "category": "journal"
+        "category": "conference"
     },
     {
         "title": "Model Context Protocol 를 활용한 효율적인 로봇 제어 프레임워크",
         "authors": "이정수， 황석환， 권근우， 김완수",
         "year": 2025,
         "journal": "제어로봇시스템학회 국내학술대회 논문집, 689-690, 2025",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&pagesize=100&citation_for_view=o7u_E8wAAAAJ:t6usbXjVLHcC",
-        "category": "journal"
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&cstart=100&pagesize=100&citation_for_view=o7u_E8wAAAAJ:t6usbXjVLHcC",
+        "category": "conference"
     },
     {
         "title": "Pelvic IMU-Based Gait Phase Classification using Kernel-Embedded ELM: A Preliminary Validation Framework for Future Hemiplegic Gait Applications",
@@ -99,7 +147,7 @@
         "authors": "Y Choi, J Jang, S Ha, S Hwang, W Kim",
         "year": 2025,
         "journal": "The Journal of Korea Robotics Society 20 (1), 112-119, 2025",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&pagesize=100&citation_for_view=o7u_E8wAAAAJ:kRWSkSYxWN8C",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&cstart=100&pagesize=100&citation_for_view=o7u_E8wAAAAJ:kRWSkSYxWN8C",
         "category": "journal"
     },
     {
@@ -107,8 +155,8 @@
         "authors": "최승민， 황순웅， 김경민， 김완수",
         "year": 2025,
         "journal": "제어로봇시스템학회 국내학술대회 논문집, 416-417, 2025",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&pagesize=100&citation_for_view=o7u_E8wAAAAJ:HE397vMXCloC",
-        "category": "journal"
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&cstart=100&pagesize=100&citation_for_view=o7u_E8wAAAAJ:HE397vMXCloC",
+        "category": "conference"
     },
     {
         "title": "서브 로봇 통합형 화재 대피 대응 안내 로봇 시스템",
@@ -116,23 +164,15 @@
         "year": 2025,
         "journal": "제어로봇시스템학회 국내학술대회 논문집, 1050-1052, 2025",
         "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&pagesize=100&citation_for_view=o7u_E8wAAAAJ:eMMeJKvmdy0C",
-        "category": "journal"
-    },
-    {
-        "title": "수동적으로 연결된 미지의 물체의 운동량 관리 통합을 통한 관절형 다리-팔 로봇의 균형유지 전신제어",
-        "authors": "최유신， 장재필， 하성민， 황순웅， 김완수",
-        "year": 2025,
-        "journal": "로봇학회 논문지 20 (1), 112-119, 2025",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&pagesize=100&citation_for_view=o7u_E8wAAAAJ:mvPsJ3kp5DgC",
-        "category": "journal"
+        "category": "conference"
     },
     {
         "title": "실내 디지털 트윈 구축을 위한 로봇 조작 정보 모델 및 시뮬레이션 설계",
         "authors": "이정수， 권근우， 유원필， 황순웅， 김완수",
         "year": 2025,
         "journal": "제어로봇시스템학회 국내학술대회 논문집, 855-856, 2025",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&pagesize=100&citation_for_view=o7u_E8wAAAAJ:WA5NYHcadZ8C",
-        "category": "journal"
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&cstart=100&pagesize=100&citation_for_view=o7u_E8wAAAAJ:WA5NYHcadZ8C",
+        "category": "conference"
     },
     {
         "title": "애니바디 모델링 시스템을 활용한 지형 특화 수정 보행 지수 개발",
@@ -200,8 +240,8 @@
         "authors": "P Lim, S Hwang, W Kim",
         "year": 2024,
         "journal": "대한기계학회 춘추학술대회, 1095-1095, 2024",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&pagesize=100&citation_for_view=o7u_E8wAAAAJ:bnK-pcrLprsC",
-        "category": "journal"
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&cstart=100&pagesize=100&citation_for_view=o7u_E8wAAAAJ:bnK-pcrLprsC",
+        "category": "conference"
     },
     {
         "title": "Transferable Convolutional Neural Networks for IMU-based Motion Gesture Recognition in Human-Machine Interaction",
@@ -227,7 +267,7 @@
         "year": 2024,
         "journal": "한국정밀공학회 학술발표대회 논문집, 43-44, 2024",
         "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&cstart=100&pagesize=100&citation_for_view=o7u_E8wAAAAJ:5ugPr518TE4C",
-        "category": "journal"
+        "category": "conference"
     },
     {
         "title": "식당 홀의 완전 자동화를 위한 테이블 로봇 시스템",
@@ -235,7 +275,7 @@
         "year": 2024,
         "journal": "제어로봇시스템학회 국내학술대회 논문집, 1135-1136, 2024",
         "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&cstart=100&pagesize=100&citation_for_view=o7u_E8wAAAAJ:Y5dfb0dijaUC",
-        "category": "journal"
+        "category": "conference"
     },
     {
         "title": "인간 자세 추정 기반 골프 스윙 자세 판별 자동화 알고리즘 개발",
@@ -243,7 +283,7 @@
         "year": 2024,
         "journal": "제어로봇시스템학회 국내학술대회 논문집, 1066-1067, 2024",
         "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&cstart=100&pagesize=100&citation_for_view=o7u_E8wAAAAJ:V3AGJWp-ZtQC",
-        "category": "journal"
+        "category": "conference"
     },
     {
         "title": "A Power-Aware Control Strategy for an Elbow Effort-Compensation Device",
@@ -311,9 +351,9 @@
         "title": "원격 조작자의 현장감을 위한 실시간 가상공간 융합형 원격 제어 구조",
         "authors": "장재필， 최승민， 최유신， 이정수， 황순웅， 김완수",
         "year": 2023,
-        "journal": "한국정밀공학회, 2023",
+        "journal": "한국정밀공학회 추계학술대회 논문집, 2023",
         "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&cstart=100&pagesize=100&citation_for_view=o7u_E8wAAAAJ:q3oQSFYPqjQC",
-        "category": "journal"
+        "category": "conference"
     },
     {
         "title": "A Directional Vibrotactile Feedback Interface for Ergonomic Postural Adjustment",
@@ -381,9 +421,9 @@
         "title": "IMU 센서 기반 지형 및 속도변화에 강인한 GAIT Phase Detection 알고리즘 개발",
         "authors": "김준현， 장재필， 신동빈， 김완수",
         "year": 2022,
-        "journal": "한국정밀공학회, 2022",
+        "journal": "한국정밀공학회 학술발표대회 논문집, 251-252, 2022",
         "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&cstart=100&pagesize=100&citation_for_view=o7u_E8wAAAAJ:1qzjygNMrQYC",
-        "category": "journal"
+        "category": "conference"
     },
     {
         "title": "IMU-based Online Kinematic Model Parameter Estimation for Four-Wheeled Skid-Steering Mobile Robot Desired Motion Tracking on Different Terrains",
@@ -526,14 +566,6 @@
         "category": "conference"
     },
     {
-        "title": "A reconfigurable and adaptive human-robot collaboration framework for improving worker ergonomics and productivity",
-        "authors": "W Kim, M Lorenzini, P Balatti, PD Nguyen, U Pattacini, V Tikhanoff, ...",
-        "year": 2019,
-        "journal": "IEEE Robotics and Automation Magazine, 2019",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&pagesize=100&citation_for_view=o7u_E8wAAAAJ:_xSYboBqXhAC",
-        "category": "journal"
-    },
-    {
         "title": "A Teleoperation Interface for Loco-Manipulation Control of Mobile Collaborative Robotic Assistant",
         "authors": "Y Wu, P Balatti, M Lorenzini, F Zhao, W Kim, A Ajoudani",
         "year": 2019,
@@ -589,7 +621,7 @@
         "year": 2018,
         "journal": "Sith National Congress of Bioengineering, 2018",
         "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&pagesize=100&citation_for_view=o7u_E8wAAAAJ:pqnbT2bcN3wC",
-        "category": "journal"
+        "category": "conference"
     },
     {
         "title": "A Synergistic Approach to the Real-Time Estimation of the Feet Ground Reaction Forces and Centers of Pressure in Humans With Application to Human–Robot Collaboration",
@@ -649,14 +681,6 @@
         "category": "conference"
     },
     {
-        "title": "인체근육의 동작의도를 이용한 하지 근력증강형 외골격 로봇의 제어 알고리즘",
-        "authors": "이희돈， 김완수， 임동환， 한창수",
-        "year": 2017,
-        "journal": "로봇학회논문지 12 (2), 124-131, 2017",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&cstart=100&pagesize=100&citation_for_view=o7u_E8wAAAAJ:lSLTfruPkqcC",
-        "category": "journal"
-    },
-    {
         "title": "Design and kinematic analysis of the hanyang exoskeleton assistive robot (HEXAR) for human synchronized motion",
         "authors": "W Kim, H Kim, D Lim, H Moon, C Han",
         "year": 2016,
@@ -680,14 +704,6 @@
         "link": "https://doi.org/gjp27w",
         "category": "journal",
         "doi": "10.1080/01691864.2015.1135080"
-    },
-    {
-        "title": "전기식 하지 외골격 로봇의 구동기 에너지 효율 향상을 위한 클러치 메커니즘 설계",
-        "authors": "김호준， 김완수， 임동환， 한창수",
-        "year": 2016,
-        "journal": "한국정밀공학회지 33 (3), 173-181, 2016",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&cstart=100&pagesize=100&citation_for_view=o7u_E8wAAAAJ:RGFaLdJalmkC",
-        "category": "journal"
     },
     {
         "title": "Design of roller-cam clutch mechanism for energy efficiency and high backdrivability of lower extremity exoskeleton",
@@ -720,14 +736,6 @@
         "year": 2015,
         "journal": "한양대학교, 2015",
         "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&cstart=100&pagesize=100&citation_for_view=o7u_E8wAAAAJ:NhqRSupF_l8C",
-        "category": "journal"
-    },
-    {
-        "title": "하지 외골격 로봇을 위한 인솔 센서시스템 및 보행 판단 알고리즘 개발",
-        "authors": "임동환， 김완수， 미안， 아쉬팍， 알리， 한창수",
-        "year": 2015,
-        "journal": "한국정밀공학회지 32 (12), 1065-1072, 2015",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=o7u_E8wAAAAJ&cstart=100&pagesize=100&citation_for_view=o7u_E8wAAAAJ:-f6ydRqryjwC",
-        "category": "journal"
+        "category": "thesis"
     }
 ]

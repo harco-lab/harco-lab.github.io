@@ -1,6 +1,6 @@
 ---
 name: Yushin Choi
-image: images/members/yusin_choi.png
+image: images/members/yusin_choi.jpg
 description: M.S. Researcher
 aliases:
   - Yushin

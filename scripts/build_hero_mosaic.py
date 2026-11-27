@@ -73,9 +73,9 @@ SOURCES: list[Source] = [
     Source("images/equipment/equipments_5.jpg", focus_y=0.45),
     # Swapped with equipments_6 on purpose: list position sets grid position.
     Source("assets/source/hero_mosaic/youtube_geo_lstm.jpg", box=(0.14, 0.48, 0.34, 0.8)),
-    Source("images/frontimg/04.png"),
-    Source("images/frontimg/05.png"),
-    Source("images/frontimg/03.png", box=(0.0, 0.0, 0.8, 1.0)),
+    Source("assets/source/hero_mosaic/terrain_stairs_ramp.png"),
+    Source("assets/source/hero_mosaic/mecanum_mobile_base.png"),
+    Source("assets/source/hero_mosaic/mocap_anybody_setup.png", box=(0.0, 0.0, 0.8, 1.0)),
     Source("images/equipment/optitrack_motioncapture.png", box=(0.0, 0.13, 1.0, 0.5)),
     # Equipment product shots (crop boxes cut the brand logos)
     Source("images/equipment/go2.png", box=(0.0, 0.18, 1.0, 1.0), studio=True),

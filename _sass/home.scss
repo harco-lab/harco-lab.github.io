@@ -118,22 +118,15 @@
   line-height: 1.7;
   color: #4a4a48;
   margin: 0 0 18px;
+  text-wrap: pretty;
 }
 .home_lead b { color: #1d1d1b; }
-.home_cta {
-  margin-top: 28px;
-  padding: 18px 22px;
-  border-left: 3px solid #1f3b6e;
-  background: #f5f5f3;
-  font-size: 0.95rem;
-  color: #1d1d1b;
-}
 .home_cta a { color: #1f3b6e; font-weight: 600; }
 
 /* Research Topics */
 .home_topics {
   margin: 16px 0 8px;
-  padding: 32px 40px 24px;
+  padding: 32px 0 24px;
 }
 .home_topics_head {
   margin: 0 0 28px;
@@ -210,9 +203,8 @@
 
 /* News strip */
 .home_news {
-  margin: 64px 0 16px;
-  padding: 32px 40px 24px;
-  border-top: 1px solid #d6d6d4;
+  margin: 16px 0 8px;
+  padding: 32px 0 24px;
 }
 .home_news_head {
   display: flex;
@@ -247,6 +239,7 @@
 }
 .home_news_list li {
   border-bottom: 1px solid #ececea;
+  text-align: left;
 }
 .home_news_list a {
   display: grid;
@@ -279,7 +272,7 @@
 /* YouTube strip */
 .home_youtube {
   margin: 16px 0 8px;
-  padding: 32px 40px 24px;
+  padding: 32px 0 24px;
 }
 .home_youtube_head {
   display: flex;
@@ -390,12 +383,12 @@
 @media (max-width: 700px) {
   .home_news_list a { grid-template-columns: 92px minmax(0, 1fr); gap: 12px; }
   .home_news_list .home_news_title { font-size: 0.92rem; }
-  .home_youtube { padding: 24px 20px 16px; }
+  .home_youtube { padding: 24px 0 16px; }
   .home_youtube_grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
   .home_youtube_title { font-size: 0.85rem; }
 }
 @media (max-width: 520px) {
-  .home_news { padding: 24px 20px 16px; }
+  .home_news { padding: 24px 0 16px; }
   .home_news_list a { grid-template-columns: 1fr; gap: 4px; }
   .home_news_list time { white-space: normal; }
   .home_youtube_grid { grid-template-columns: 1fr; }

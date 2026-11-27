@@ -82,7 +82,7 @@ redirect_from:
 * [**Wansoo Kim**](/members/wansoo_kim)  : **_Principal Investigator_**  
 * [**Seongmin Ha**](/members/seongmin_ha)   :   *(H/W) Electrical Part Design*
 * [**Joonhyun Kim**](/members/joonhyun_kim)   : *(S/W) AI Engineering, Optization, Data collection*
-* [**Joonhyung Kong**](/members/joonhyung_kong)   : *(H/W) Setting up experimental environments, building embedded systems*
+* **Joonhyung Kong**   : *(H/W) Setting up experimental environments, building embedded systems*
 * [**Dongcheol Shin**](/members/dongcheol_shin)   : *(H/W) Setting up terrain and experimental environment equipment*
 
 ***    

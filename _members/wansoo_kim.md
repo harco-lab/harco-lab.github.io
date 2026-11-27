@@ -1,6 +1,6 @@
 ---
 name: Wansoo Kim
-image: images/members/wansoo_kim.png
+image: images/members/wansoo_kim.jpg
 description: Associate Professor
 aliases:
   - Wansoo Kim
