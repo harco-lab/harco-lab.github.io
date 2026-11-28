@@ -10,7 +10,7 @@ layout: default
   <div class="home_hero_content">
     <img class="home_hero_logo" src="/images/common/harco_logo_transparent.png" alt="HARCO Lab" width="1036" height="148" decoding="async">
     <h1 class="home_hero_title"><b>H</b>um<b>A</b>n-<b>R</b>obot <b>CO</b>llaboration Research Lab</h1>
-    <p class="home_hero_affiliation"><span>Department of Robot Engineering</span><span class="home_hero_sep" aria-hidden="true"> · </span><span>Hanyang University</span></p>
+    <p class="home_hero_affiliation"><span>Department of Robotics</span><span class="home_hero_sep" aria-hidden="true"> · </span><span>Hanyang University</span></p>
   </div>
 </div>
 
