@@ -1,6 +1,6 @@
 ---
 title: Twisted String Actuator(TSA) with extended variable stiffness
-image: images/research/exoskeleton/tsa_variable_stiffness/main.png
+image: images/research/exoskeleton_robot/tsa_variable_stiffness/main.png
 tags:
   - Tendon Mechanism
   - H / W Modeling
@@ -35,7 +35,7 @@ Researcher [*Dongcheol Shin*](/members/dongcheol_shin) made a TSA with expanded 
 
 {%
   include figure.html
-  image="images/research/exoskeleton/tsa_variable_stiffness/1.png"
+  image="images/research/exoskeleton_robot/tsa_variable_stiffness/1.png"
   caption="Experimental Setting for Tendon Mechanism"
   width="40%"
 %}
@@ -43,7 +43,7 @@ Researcher [*Dongcheol Shin*](/members/dongcheol_shin) made a TSA with expanded 
 {% capture col1 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/tsa_variable_stiffness/2.png"
+  image="images/research/exoskeleton_robot/tsa_variable_stiffness/2.png"
   caption="TSA Mechanism Illustration 1"
   width="52%"
 %}
@@ -51,7 +51,7 @@ Researcher [*Dongcheol Shin*](/members/dongcheol_shin) made a TSA with expanded 
 {% capture col2 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/tsa_variable_stiffness/3.png"
+  image="images/research/exoskeleton_robot/tsa_variable_stiffness/3.png"
   caption="TSA Mechanism Illustration 2"
   width="70%"
 %}
@@ -63,7 +63,7 @@ Researcher [*Dongcheol Shin*](/members/dongcheol_shin) made a TSA with expanded 
 {% capture col1 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/tsa_variable_stiffness/4.png"
+  image="images/research/exoskeleton_robot/tsa_variable_stiffness/4.png"
   caption="Changes in Displacement with Variation of the offset between Strings"
   width="100%"
 %}
@@ -71,7 +71,7 @@ Researcher [*Dongcheol Shin*](/members/dongcheol_shin) made a TSA with expanded 
 {% capture col2 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/tsa_variable_stiffness/5.png"
+  image="images/research/exoskeleton_robot/tsa_variable_stiffness/5.png"
   caption="Comparison of Experimental and Analytical Modelings"
   width="100%"
 %}

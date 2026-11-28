@@ -1,6 +1,6 @@
 ---
 title:  'Pelvic IMU-Based Gait Phase Classification using Kernel-Embedded Extreme Learning Machine'
-image: images/research/exoskeleton/pelvic_imu_gait_phase/main.jpg
+image: images/research/exoskeleton_robot/pelvic_imu_gait_phase/main.jpg
 tags:
   - Gait Phase Classification
   - Symmetric Positive Definite(SPD) Manifold
@@ -26,14 +26,14 @@ The proposed framework introduces a minimal-sensor gait phase classification sys
 {% capture col1 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/pelvic_imu_gait_phase/1.png"
+  image="images/research/exoskeleton_robot/pelvic_imu_gait_phase/1.png"
 
 %}
 {% endcapture %}
 {% capture col2 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/pelvic_imu_gait_phase/2.png"
+  image="images/research/exoskeleton_robot/pelvic_imu_gait_phase/2.png"
 
 %}
 {% endcapture %}
@@ -41,5 +41,5 @@ The proposed framework introduces a minimal-sensor gait phase classification sys
 
 {%
   include figure.html
-  image="images/research/exoskeleton/pelvic_imu_gait_phase/main.jpg"
+  image="images/research/exoskeleton_robot/pelvic_imu_gait_phase/main.jpg"
 %}

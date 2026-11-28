@@ -90,12 +90,12 @@ SOURCES: list[Source] = [
     Source("images/equipment/anybody.png", box=(0.0, 0.2, 1.0, 1.0), studio=True),
     # Research photos and renders
     Source("images/research/robot_manipulation/target_tracking_mobile_robot/1.png", box=(0.28, 0.25, 0.7, 0.72)),
-    Source("images/research/exoskeleton/tsa_variable_stiffness/1.png"),
-    Source("images/research/exoskeleton/tsa_variable_stiffness/main.png", studio=True),
-    Source("images/research/exoskeleton/multitask_gait_recognition/3.png", box=(0.53, 0.0, 0.97, 1.0), focus_y=0.3),
+    Source("images/research/exoskeleton_robot/tsa_variable_stiffness/1.png"),
+    Source("images/research/exoskeleton_robot/tsa_variable_stiffness/main.png", studio=True),
+    Source("images/research/exoskeleton_robot/multitask_gait_recognition/3.png", box=(0.53, 0.0, 0.97, 1.0), focus_y=0.3),
     # List position sets the grid position; these two were swapped on purpose.
     Source("images/tools_yaml/research_youtube.png"),
-    Source("images/research/exoskeleton/torsion_soft_actuator/main.png"),
+    Source("images/research/exoskeleton_robot/torsion_soft_actuator/main.png"),
     Source("images/research/robot_learning/mcp_robot_control/3.png"),
     Source("images/research/robot_manipulation/adaptive_control_hrc/1.png"),
     Source("images/research/robot_manipulation/adaptive_control_hrc/2.png"),

@@ -1,6 +1,6 @@
 ---
 title: Active Passive Hybrid Joint System Using Planetary Gears
-image: images/research/exoskeleton/hybrid_joint_planetary_gears/main.png
+image: images/research/exoskeleton_robot/hybrid_joint_planetary_gears/main.png
 tags:
   - Lower-limb Exoskeleton robot
   - H / W Modeling
@@ -36,14 +36,14 @@ The active/passive mode of the gearbox changes depending on the motor restraint,
 {% capture col1 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/hybrid_joint_planetary_gears/main.png"
+  image="images/research/exoskeleton_robot/hybrid_joint_planetary_gears/main.png"
   caption="Planetary Gear + Gear Break System"
 %}
 {% endcapture %}
 {% capture col2 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/hybrid_joint_planetary_gears/1.png"
+  image="images/research/exoskeleton_robot/hybrid_joint_planetary_gears/1.png"
   caption="Planetary Gear Interior View"
 %}
 {% endcapture %}

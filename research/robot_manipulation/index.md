@@ -2,6 +2,8 @@
 title: Robot Manipulation
 nav:
   order: 1
+redirect_from:
+  - /research/mobile_manipulator/
 ---
 
 # Robot Manipulation Research

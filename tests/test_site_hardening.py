@@ -450,7 +450,7 @@ class SiteHardeningTest(unittest.TestCase):
                 self.assertTrue(exists_with_exact_case(path))
 
     def test_research_posts_live_in_area_folders_with_topic_names(self):
-        areas = {"robot_manipulation", "exoskeleton", "robot_learning"}
+        areas = {"robot_manipulation", "exoskeleton_robot", "robot_learning"}
         posts = sorted((ROOT / "_posts" / "research").rglob("*.md"))
         self.assertTrue(posts)
         for path in posts:
@@ -463,7 +463,7 @@ class SiteHardeningTest(unittest.TestCase):
                 self.assertNotIn("\ngroup:", path.read_text(encoding="utf-8").split("\n---", 1)[0])
 
     def test_research_images_live_in_their_post_folder(self):
-        areas = {"robot_manipulation", "exoskeleton", "robot_learning"}
+        areas = {"robot_manipulation", "exoskeleton_robot", "robot_learning"}
         for path in sorted((ROOT / "images" / "research").rglob("*")):
             if not path.is_file():
                 continue

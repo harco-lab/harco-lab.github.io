@@ -1,6 +1,6 @@
 ---
 title: 'Soft Exo: TSA-Silicone Hybrid with Adjustable Stfiffness'
-image: images/research/exoskeleton/tsa_silicone_soft_exo/main.png
+image: images/research/exoskeleton_robot/tsa_silicone_soft_exo/main.png
 tags:
   - soft wearable robot actuactor
   - TSA system
@@ -26,14 +26,14 @@ As the demand for wearable assistive devices increases, the need for soft actuat
 {% capture col1 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/tsa_silicone_soft_exo/1.png"
+  image="images/research/exoskeleton_robot/tsa_silicone_soft_exo/1.png"
 
 %}
 {% endcapture %}
 {% capture col2 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/tsa_silicone_soft_exo/2.png"
+  image="images/research/exoskeleton_robot/tsa_silicone_soft_exo/2.png"
 
 %}
 {% endcapture %}
@@ -41,6 +41,6 @@ As the demand for wearable assistive devices increases, the need for soft actuat
 
 {%
   include figure.html
-  image="images/research/exoskeleton/tsa_silicone_soft_exo/3.png"
+  image="images/research/exoskeleton_robot/tsa_silicone_soft_exo/3.png"
 
 %}

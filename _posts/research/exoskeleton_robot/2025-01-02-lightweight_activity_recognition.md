@@ -1,6 +1,6 @@
 ---
 title: 'L_HAR : Lightweight Human Activity Recognition'
-image: images/research/exoskeleton/lightweight_activity_recognition/main.png
+image: images/research/exoskeleton_robot/lightweight_activity_recognition/main.png
 tags:
   - Human-Robot Interaction
   - Human Activity Recognition
@@ -25,5 +25,5 @@ This study aims to increase the efficiency of lightweight with on-device efficie
 
 {%
   include figure.html
-  image="images/research/exoskeleton/lightweight_activity_recognition/1.png"
+  image="images/research/exoskeleton_robot/lightweight_activity_recognition/1.png"
 %}

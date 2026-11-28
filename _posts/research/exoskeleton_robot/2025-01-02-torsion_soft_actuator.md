@@ -1,6 +1,6 @@
 ---
 title: Soft Actuator with torsion
-image: images/research/exoskeleton/torsion_soft_actuator/main.png
+image: images/research/exoskeleton_robot/torsion_soft_actuator/main.png
 tags:
   - Soft Exoskeleton
   - H / W Modeling
@@ -31,14 +31,14 @@ Development of a soft actuator with adjustable stiffness
 {% capture col1 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/torsion_soft_actuator/1.png"
+  image="images/research/exoskeleton_robot/torsion_soft_actuator/1.png"
   width="52%"
 %}
 {% endcapture %}
 {% capture col2 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/torsion_soft_actuator/2.png"
+  image="images/research/exoskeleton_robot/torsion_soft_actuator/2.png"
   caption="TSA Mechanism Illustration 2"
   width="70%"
 %}

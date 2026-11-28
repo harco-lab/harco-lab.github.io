@@ -2,6 +2,8 @@
 title: Robot Learning
 nav:
   order: 1
+redirect_from:
+  - /research/artificial_intelligence/
 ---
 
 # Robot Learning Research

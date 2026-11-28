@@ -1,6 +1,6 @@
 ---
 title: Develop soft actuator
-image: images/research/exoskeleton/soft_actuator/main.png
+image: images/research/exoskeleton_robot/soft_actuator/main.png
 tags:
   - Soft Exoskeleton
   - H / W Modeling
@@ -27,7 +27,7 @@ redirect_from:
 
 {%
   include figure.html
-  image="images/research/exoskeleton/tsa_variable_stiffness/1.png"
+  image="images/research/exoskeleton_robot/tsa_variable_stiffness/1.png"
   caption="Experimental Setting for Tendon Mechanism"
   width="40%"
 %}
@@ -35,7 +35,7 @@ redirect_from:
 {% capture col1 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/tsa_variable_stiffness/2.png"
+  image="images/research/exoskeleton_robot/tsa_variable_stiffness/2.png"
   caption="TSA Mechanism Illustration 1"
   width="52%"
 %}
@@ -43,7 +43,7 @@ redirect_from:
 {% capture col2 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/tsa_variable_stiffness/3.png"
+  image="images/research/exoskeleton_robot/tsa_variable_stiffness/3.png"
   caption="TSA Mechanism Illustration 2"
   width="70%"
 %}
@@ -55,7 +55,7 @@ redirect_from:
 {% capture col1 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/tsa_variable_stiffness/4.png"
+  image="images/research/exoskeleton_robot/tsa_variable_stiffness/4.png"
   caption="Changes in Displacement with Variation of the offset between Strings"
   width="100%"
 %}
@@ -63,7 +63,7 @@ redirect_from:
 {% capture col2 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/tsa_variable_stiffness/5.png"
+  image="images/research/exoskeleton_robot/tsa_variable_stiffness/5.png"
   caption="Comparison of Experimental and Analytical Modelings"
   width="100%"
 %}

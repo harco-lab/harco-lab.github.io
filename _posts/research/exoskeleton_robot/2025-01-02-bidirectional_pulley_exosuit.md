@@ -1,6 +1,6 @@
 ---
 title: Developing A Hybrid Bidirectional Pulley Module (HBPM) for Cable-Driven Soft Exosuits
-image: images/research/exoskeleton/bidirectional_pulley_exosuit/main.png
+image: images/research/exoskeleton_robot/bidirectional_pulley_exosuit/main.png
 tags:
   - Wearable robotics
   - Mechanism design
@@ -26,5 +26,5 @@ While the current work focuses on module design and dummy load testing, the long
 
 {%
   include figure.html
-  image="images/research/exoskeleton/bidirectional_pulley_exosuit/main.png"
+  image="images/research/exoskeleton_robot/bidirectional_pulley_exosuit/main.png"
 %}

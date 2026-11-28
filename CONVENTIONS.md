@@ -66,7 +66,7 @@ Required frontmatter keys:
 Research posts are the exception: they go in a folder for their research area and are named by topic, without the category prefix or a number.
 
 ```text
-_posts/research/<robot_manipulation|exoskeleton|robot_learning>/YYYY-MM-DD-<topic>.md
+_posts/research/<robot_manipulation|exoskeleton_robot|robot_learning>/YYYY-MM-DD-<topic>.md
 ```
 
 The folder sets the research area, so research posts have no `group:` field.

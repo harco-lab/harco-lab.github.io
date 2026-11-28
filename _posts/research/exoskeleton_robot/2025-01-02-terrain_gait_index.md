@@ -1,6 +1,6 @@
 ---
 title: Development of a Terrain-Specific Modified Gait Index Using the AnyBody Modeling System
-image: images/research/exoskeleton/terrain_gait_index/main.png
+image: images/research/exoskeleton_robot/terrain_gait_index/main.png
 tags:
   - Anybody Modeling System
   - Gait Analysis
@@ -26,5 +26,5 @@ This study proposes a Modified Gait Index (MGI) to quantitatively evaluate walki
 
 {%
   include figure.html
-  image="images/research/exoskeleton/terrain_gait_index/1.png"
+  image="images/research/exoskeleton_robot/terrain_gait_index/1.png"
 %}

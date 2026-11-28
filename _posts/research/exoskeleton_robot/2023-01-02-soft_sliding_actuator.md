@@ -1,6 +1,6 @@
 ---
 title: Design and Validation of Soft Sliding Actuator
-image: images/research/exoskeleton/soft_sliding_actuator/main.png
+image: images/research/exoskeleton_robot/soft_sliding_actuator/main.png
 tags:
   - Soft robot applications
   - Soft sensors and actuators
@@ -43,17 +43,17 @@ The gradual sliding of the structure’s layer resulted in an increase in stiffn
 {% capture col1 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/soft_sliding_actuator/1.png"
+  image="images/research/exoskeleton_robot/soft_sliding_actuator/1.png"
 %}
 {% endcapture %}
 {% capture col2 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/soft_sliding_actuator/2.png"
+  image="images/research/exoskeleton_robot/soft_sliding_actuator/2.png"
 %}
 {% endcapture %}
 {% include two-col.html col1=col1 col2=col2 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/soft_sliding_actuator/3.png"
+  image="images/research/exoskeleton_robot/soft_sliding_actuator/3.png"
 %}

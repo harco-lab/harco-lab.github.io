@@ -1,6 +1,6 @@
 ---
 title: Multitask Learning for Multiple Recognition Tasks in Lower-limb Exoskeleton robot
-image: images/research/exoskeleton/multitask_gait_recognition/main.png
+image: images/research/exoskeleton_robot/multitask_gait_recognition/main.png
 tags:
   - Lower-Limb Exoskeleton Robot
   - Multitask Learning
@@ -52,14 +52,14 @@ ognize Gait Phase and Terrrain
 
 {%
   include figure.html
-  image="images/research/exoskeleton/multitask_gait_recognition/1.png"
+  image="images/research/exoskeleton_robot/multitask_gait_recognition/1.png"
   caption="Input Pipelining Algorithm"
   width="80%"
 %}
 
 {%
   include figure.html
-  image="images/research/exoskeleton/multitask_gait_recognition/main.png"
+  image="images/research/exoskeleton_robot/multitask_gait_recognition/main.png"
   caption="Multitask Model Structure"
   width="80%"
 %}
@@ -67,14 +67,14 @@ ognize Gait Phase and Terrrain
 {% capture col1 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/multitask_gait_recognition/2.png"
+  image="images/research/exoskeleton_robot/multitask_gait_recognition/2.png"
   caption="Data Collecting Sensors"
 %}
 {% endcapture %}
 {% capture col2 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/multitask_gait_recognition/3.png"
+  image="images/research/exoskeleton_robot/multitask_gait_recognition/3.png"
   caption="Illustration of the terrains used in our experiments, and Data collected on a 35m long
 flat surface and a 4.2m long staircase with a 29.05°angle."
 %}

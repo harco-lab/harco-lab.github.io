@@ -1,6 +1,6 @@
 ---
 title:  Design of rope-driven hand exoskeleton
-image: images/research/exoskeleton/rope_driven_hand_exoskeleton/main.png
+image: images/research/exoskeleton_robot/rope_driven_hand_exoskeleton/main.png
 tags:
   - hand exoskeleton
   - rehabilitation robotics 
@@ -25,14 +25,14 @@ My research presents a lightweight tendon-driven hand exoskeleton designed for g
 {% capture col1 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/rope_driven_hand_exoskeleton/1.png"
+  image="images/research/exoskeleton_robot/rope_driven_hand_exoskeleton/1.png"
 
 %}
 {% endcapture %}
 {% capture col2 %}
 {%
   include figure.html
-  image="images/research/exoskeleton/rope_driven_hand_exoskeleton/2.png"
+  image="images/research/exoskeleton_robot/rope_driven_hand_exoskeleton/2.png"
 
 %}
 {% endcapture %}
