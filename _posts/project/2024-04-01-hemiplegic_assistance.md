@@ -1,0 +1,81 @@
+---
+title: Development of a portable powered assistance device and service to provide assistive force to a passive leg support, enhancing mobility.
+mintitle: Hemiplegic Assistance
+image: images/project/hemiplegic_assistance/main.png
+group: ongoing
+tags:
+  - Gait Assistance
+  - Human Motion Analysis
+  - Tendon
+  - Gait Phase Detection
+fund: National Rehabilitation Center
+date_start: 2024-04-01
+date_end: 2027-12-31
+role: Coordinator
+redirect_from:
+  - /2024/04/01/project-Hemiplegic_assistance/
+  - /2024/04/01/project_hemiplegic_assistance.html
+---
+#### Goal of This Project
+   - Design a lightweight, tendon-driven system attachable to existing passive orthoses.
+
+   - Provide assistive torque at key gait phases to restore natural walking patterns.
+
+   - Reduce fall risk and improve user confidence in real-world walking environments.
+
+   - Validate the device with target users and establish commercialization pathways.
+
+***
+
+#### Importance of the Research
+   - Restrict mobility and fail to meet the needs of users seeking active daily ambulation.
+
+   - High cost, heavy structure, and limited applicability in daily life.
+
+   - Increase in aging and single-person disabled households necessitates practical assistive solutions.
+
+   - Reduce complications such as joint contractures, muscle atrophy, and depression.
+
+   - Expand user choices, lower public healthcare burdens, and revitalize the domestic assistive device industry.
+
+***
+
+#### Research Content and Scope
+   - Utilize 3D motion capture to analyze gait phases and define assistive control requirements.
+
+   - Design sensor-based algorithms for accurate phase recognition (stance/swing) in real-time.
+
+   - Implement multiple control modes (ASSIST, SLACK, BRACE) and emergency response strategies.
+
+   - Create adaptive algorithms to optimize control parameters based on individual gait patterns.
+
+   - Ensure compatibility with AFO, KAFO, and HKAFO and adapt control algorithms accordingly.
+
+   - Define risk scenarios and appropriate mitigation strategies for real-world usage.
+
+#### Participating Researchers
+* [Wansoo Kim](/members/wansoo_kim)
+* [Joonkyu No](/members/joonkyu_no)
+* [Seongmin Ha](/members/seongmin_ha)
+* [Donggyu Lee](/members/donggyu_lee)
+* [Yoonseo Kim](/members/yoonseo_kim)
+* [Jihwan Oh](/members/jihwan_oh)
+* [Inho Gil](/members/inho_gil)
+
+***
+
+#### Funding
+{% capture col1 %}
+{%
+  include feature.html
+  image="images/project/funders/hanyang_erica_iucf.png"
+%}
+{% endcapture %}
+{% capture col2 %}
+{%
+  include feature.html
+  image="images/project/funders/national_rehabilitation_center.png"
+  link='https://www.nrc.go.kr/nrc/main.do'
+%}
+{% endcapture %}
+{% include two-col.html col1=col1 col2=col2 %}

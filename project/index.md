@@ -4,27 +4,12 @@ nav:
   order: 2
 ---
 
-# **Projects**
+# Projects
 
+## Ongoing Projects
 
-{% include section.html %}
+{% include project-list.html status="ongoing" %}
 
-## <i class="fas fa-paper-plane"></i> *Ongoing Projects*
-{% include list_noyear.html 
-component="project_grid" 
-data="posts" 
-filters="group: ongoing" %}
+## Past Projects
 
-{% include section.html %}
-
-## <i class="far fa-paper-plane"></i> *Past Projects*
-{% include list.html 
-component="project_grid" 
-data="posts" 
-filters="group: past" %}
-
-{% include section.html %}
-
-
-
-
+{% include project-list.html status="past" %}

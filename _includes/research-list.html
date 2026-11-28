@@ -9,17 +9,17 @@
   {%- if years.size > 1 -%}
   <h3 id="{{ year.name }}">{{ year.name }}</h3>
   {%- endif -%}
-  <div class="research_grid">
+  <div class="post_grid">
     {%- assign items = year.items | sort: "date" | reverse -%}
     {%- for post in items -%}
-    <a class="research_card" href="{{ post.url | relative_url }}">
-      <span class="research_card_image">
+    <a class="post_card" href="{{ post.url | relative_url }}">
+      <span class="post_card_image">
         <img src="{{ post.image | relative_url }}" alt="" loading="lazy" decoding="async">
       </span>
-      <span class="research_card_body">
-        <span class="research_card_title">{{ post.title }}</span>
+      <span class="post_card_body">
+        <span class="post_card_title">{{ post.title }}</span>
         {%- if post.author -%}
-        <span class="research_card_author">{{ post.author }}</span>
+        <span class="post_card_author">{{ post.author }}</span>
         {%- endif -%}
       </span>
     </a>

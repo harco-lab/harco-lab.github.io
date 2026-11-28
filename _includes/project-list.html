@@ -1,0 +1,34 @@
+{%- comment -%}
+  Project posts with one status as a grid of cards.
+  Usage: {% include project-list.html status="ongoing" %}  (past projects are grouped by year)
+{%- endcomment -%}
+{%- assign projects = site.posts | where: "group", include.status -%}
+{%- if include.status == "past" -%}
+  {%- assign years = projects | group_by_exp: "p", "p.date | date: '%Y'" | sort: "name" | reverse -%}
+{%- else -%}
+  {%- assign years = projects | group_by_exp: "p", "'all'" -%}
+{%- endif -%}
+{::nomarkdown}
+{%- for year in years -%}
+  {%- if include.status == "past" -%}
+  <h3 id="{{ year.name }}">{{ year.name }}</h3>
+  {%- endif -%}
+  <div class="post_grid">
+    {%- assign items = year.items | sort: "date" | reverse -%}
+    {%- for post in items -%}
+    <a class="post_card" href="{{ post.url | relative_url }}">
+      <span class="post_card_image">
+        <img src="{{ post.image | relative_url }}" alt="" loading="lazy" decoding="async">
+      </span>
+      <span class="post_card_body">
+        <span class="post_card_title">{{ post.mintitle | default: post.title }}</span>
+        {%- if post.date_start and post.date_end -%}
+        <span class="post_card_meta">{{ post.date_start | date: "%b %Y" }} – {{ post.date_end | date: "%b %Y" }}</span>
+        {%- endif -%}
+        <span class="post_card_meta">{{ post.fund }}{% if post.role %} · {{ post.role }}{% endif %}</span>
+      </span>
+    </a>
+    {%- endfor -%}
+  </div>
+{%- endfor -%}
+{:/}

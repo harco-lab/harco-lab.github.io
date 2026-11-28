@@ -66,17 +66,19 @@ Required frontmatter keys:
 Research posts are the exception: they go in a folder for their research area and are named by topic, without the category prefix or a number.
 
 ```text
-_posts/research/<robot_manipulation|exoskeleton|robot_learning>/YYYY-MM-DD-<topic>.md
+_posts/research/<robot_manipulation|exoskeleton_robot|robot_learning>/YYYY-MM-DD-<topic>.md
 ```
 
 The folder sets the research area, so research posts have no `group:` field.
+
+Project posts are also named by topic without the prefix: `_posts/project/YYYY-MM-DD-<topic>.md`, with `group: ongoing` or `group: past`.
 
 #### Good (posts)
 
 ```text
 2025-05-22-news_icra2025.md
 research/robot_learning/2026-01-04-language_to_task_maps.md
-2024-04-01-project_handshaking.md
+project/2024-04-01-virtual_handshake.md
 2025-09-29-news_thomas_kwok_seminar.md
 ```
 
@@ -119,6 +121,7 @@ images/event_img/    # event banners
 - No Korean filenames — use the romanized member slug.
 - Member-tied images: `<member-slug-lower>_<n>.png` and `<member-slug-lower>_main.png` for the post's hero image.
 - Research images: `images/research/<area>/<topic>/main.png` for the card image and `1.png`, `2.png`, … for figures, where `<area>/<topic>` matches the post's folder and filename.
+- Project images: `images/project/<topic>/` in the same way; funder logos go in `images/project/funders/<organization>.png`.
 
 #### Good (images)
 

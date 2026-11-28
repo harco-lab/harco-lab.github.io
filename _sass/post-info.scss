@@ -18,3 +18,8 @@
     }
   }
 }
+
+// Project period, funder and role; long funder names may wrap
+.post_info .post_info_project {
+  white-space: normal;
+}

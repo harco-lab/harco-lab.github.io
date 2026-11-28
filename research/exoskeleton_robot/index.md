@@ -10,4 +10,4 @@ We study how to design and control exoskeletons that are both adaptive and light
 
 ## Our Research
 
-{% include research-list.html group="exoskeleton" %}
+{% include research-list.html group="exoskeleton_robot" %}

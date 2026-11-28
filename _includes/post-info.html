@@ -11,7 +11,13 @@
       {%- endif -%}
     </span>
   {%- endif -%}
-
+  {%- if include.date_start and include.date_end -%}
+    <span class="post_info_project">
+      {{- include.date_start | date: "%b %Y" }} – {{ include.date_end | date: "%b %Y" -}}
+      {%- if include.fund %} · {{ include.fund }}{% endif -%}
+      {%- if include.role %} · {{ include.role }}{% endif -%}
+    </span>
+  {%- endif -%}
 </div>
 
 {%- if include.tags -%}

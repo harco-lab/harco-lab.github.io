@@ -38,9 +38,9 @@ defaults:
     values:
       group: robot_manipulation
   - scope:
-      path: "_posts/research/exoskeleton"
+      path: "_posts/research/exoskeleton_robot"
     values:
-      group: exoskeleton
+      group: exoskeleton_robot
   - scope:
       path: "_posts/research/robot_learning"
     values:

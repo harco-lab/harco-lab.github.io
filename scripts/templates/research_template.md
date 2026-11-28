@@ -1,5 +1,5 @@
 ---
-# Save as _posts/research/<robot_manipulation|exoskeleton|robot_learning>/YYYY-MM-DD-<topic>.md
+# Save as _posts/research/<robot_manipulation|exoskeleton_robot|robot_learning>/YYYY-MM-DD-<topic>.md
 title: An Efficient Robot Control Framework Using the Model Context Protocol
 image: images/research/robot_learning/mcp_robot_control/main.png
 tags:
