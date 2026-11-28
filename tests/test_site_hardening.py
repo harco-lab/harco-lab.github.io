@@ -274,7 +274,7 @@ class SiteHardeningTest(unittest.TestCase):
             "_includes/memberpicture.html",
             "_includes/portrait.html",
             "_includes/portrait-spc.html",
-            "_includes/project_grid.html",
+            "_includes/project-list.html",
             "_includes/research-list.html",
         ):
             with self.subTest(path=path):
@@ -308,7 +308,7 @@ class SiteHardeningTest(unittest.TestCase):
         self.assertIn('@import "publication";', read_repo_file("css/all.scss"))
 
     def test_project_pages_with_date_ranges_render_body_content_as_visible_text(self):
-        html = built_site_files()[Path("2024/04/01/project_forestry_work.html")]
+        html = built_site_files()[Path("2024/04/01/forestry_mobile_platform.html")]
         text = main_visible_text(html)
 
         self.assertIn("Goal of This Project", text)
@@ -471,6 +471,16 @@ class SiteHardeningTest(unittest.TestCase):
             with self.subTest(image=str(relative)):
                 self.assertIn(relative.parts[0], areas)
                 self.assertLessEqual(len(relative.parts), 3)
+
+    def test_project_posts_and_images_are_named_by_topic(self):
+        for path in sorted((ROOT / "_posts" / "project").glob("*.md")):
+            with self.subTest(post=path.name):
+                self.assertNotRegex(path.stem, r"^\d{4}-\d{2}-\d{2}-project_")
+                self.assertRegex(path.read_text(encoding="utf-8"), r"\ngroup: (ongoing|past)\n")
+        for path in sorted((ROOT / "images" / "project").rglob("*")):
+            if path.is_file():
+                with self.subTest(image=str(path.relative_to(ROOT))):
+                    self.assertEqual(len(path.relative_to(ROOT / "images" / "project").parts), 2)
 
     def test_referenced_image_assets_exist(self):
         for relative_path in referenced_image_paths():

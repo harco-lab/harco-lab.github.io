@@ -1,28 +1,22 @@
 ---
 title: Development of the 4 Wheeled Mobile Platform for Large-Scale Forestry Work can Maintain Stable Posture and Move in Rough Terrain Environment and Mission Equipment Linkage Technology
 mintitle: 4 Wheeled Mobile Platform for Forestry Rough Terrain
-image: images/project/forestry_project_main.png
+image: images/project/forestry_mobile_platform/main.png
 group: ongoing
 tags:
-  - PROJECT
   - Forestry
   - Whole-body control
-  - Mobile-manipulator
+  - Mobile Manipulator
   - Floating base
-fund: NRF
+fund: NRF, Korea Forest Service
 date_start: 2024-04-01
 date_end: 2028-12-31
 role: Coordinator
 redirect_from:
   - /2024/04/01/project-forestry_work/
+  - /2024/04/01/project_forestry_work.html
 ---
-
-**<i class="fas fa-sync"></i> Period : 2024-04-01 ~ 2028-12-31**
-
-***
-
-#### <i class="fas fa-edit"></i> **Goal of This Project**
-
+#### Goal of This Project
 Development of intelligent forestry machinery capable of semi-autonomous operation in steep and irregular terrain through integrated robotic control, sensing, and AI-based optimization.
 
 To do this, this study established **Four Scientific Objectives (SO)**:
@@ -34,8 +28,7 @@ To do this, this study established **Four Scientific Objectives (SO)**:
 
 ***
 
-#### <i class="far fa-edit"></i> **Importance of the Research**
-
+#### Importance of the Research
 - Imported forestry machines are unsuitable for steep and rugged domestic terrain, creating demand for localized solutions.
 - Decline and aging of the forestry workforce require automation and semi-autonomous systems for sustainable productivity.
 - Robotic control and AI integration can reduce safety risks, prevent accidents, and improve working conditions.
@@ -43,8 +36,7 @@ To do this, this study established **Four Scientific Objectives (SO)**:
 
 ***
 
-#### <i class="far fa-edit"></i> **Project Contents**
-
+#### Project Contents
 To achieve the scientific goals of this study, the following **Four Work Packages (WP)** were established, covering robotics, control systems, AI, and field validation:
 
 - **(WP.1)** : Conduct preliminary studies and build a multi-body dynamics simulation environment for control validation.
@@ -54,24 +46,31 @@ To achieve the scientific goals of this study, the following **Four Work Package
 
 ***
 
-#### **<i class="fas fa-user-circle"></i> Participating Researchers**
-
-* [**Wansoo Kim**](/members/wansoo_kim)
-* [**Soonwoong Hwang**](/members/soonwoong_hwang)
-* [**Seungmin Choi**](/members/seungmin_choi)
-* [**Kai Li**](/members/kai_li)
-* [**Geunwoo Kwon**](/members/geunwoo_kwon)
-* [**Jeongmok Kim**](/members/jeongmok_kim)
-* [**Seokhwan Hwang**](/members/seokhwan_hwang)
-* [**Jingwang Lee**](/members/jingwang_lee)
+#### Participating Researchers
+* [Wansoo Kim](/members/wansoo_kim)
+* [Soonwoong Hwang](/members/soonwoong_hwang)
+* [Seungmin Choi](/members/seungmin_choi)
+* [Kai Li](/members/kai_li)
+* [Geunwoo Kwon](/members/geunwoo_kwon)
+* [Jeongmok Kim](/members/jeongmok_kim)
+* [Seokhwan Hwang](/members/seokhwan_hwang)
+* [Jingwang Lee](/members/jingwang_lee)
 
 ***
 
-#### **<i class="fas fa-money-bill-wave-alt"></i> Funding**
-
+#### Funding
+{% capture col1 %}
 {%
   include feature.html
-  image="images/project/forestry_support.png"
+  image="images/project/funders/nrf.png"
+  link='https://www.nrf.re.kr/index'
 %}
-
-***
+{% endcapture %}
+{% capture col2 %}
+{%
+  include feature.html
+  image="images/project/funders/korea_forest_service.png"
+  link='https://www.forest.go.kr'
+%}
+{% endcapture %}
+{% include two-col.html col1=col1 col2=col2 %}

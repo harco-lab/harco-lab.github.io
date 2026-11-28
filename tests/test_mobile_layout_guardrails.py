@@ -33,7 +33,6 @@ class MobileLayoutGuardrailsTest(unittest.TestCase):
 
     def test_event_style_grids_stack_and_allow_children_to_shrink(self):
         for path, selector in (
-            ("_sass/project-grid.scss", ".project_container"),
             ("_sass/event-grid.scss", ".event_container"),
         ):
             css = read_repo_file(path)

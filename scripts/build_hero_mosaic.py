@@ -82,7 +82,7 @@ SOURCES: list[Source] = [
     Source("images/equipment/h30a.png", box=(0.0, 0.18, 1.0, 1.0), studio=True),
     # Collaboration render from the Sinjin project (kept at this list position
     # so the other tiles stay where they are)
-    Source("images/project/sinjin_project_1.png", studio=True),
+    Source("images/project/ergonomic_hrc/1.png", studio=True),
     Source("images/equipment/neuromek.png", erase=((0.265, 0.225, 0.98, 0.305),), studio=True),
     Source("images/equipment/piper.png", box=(0.0, 0.16, 1.0, 1.0), studio=True),
     Source("images/equipment/delsysemg.png", box=(0.0, 0.33, 0.9, 1.0), studio=True),
@@ -127,11 +127,11 @@ SOURCES: list[Source] = [
     # https://www.youtube.com/watch?v=RW9_FgfxWzs (Go2 MCP demo): camera view
     Source("assets/source/hero_mosaic/youtube_go2_mcp_demo.jpg", box=(0.555, 0.56, 1.0, 1.0)),
     # Project renders
-    Source("images/project/dgist_image.png", studio=True),
-    Source("images/project/forestry_project_main.png", box=(0.0, 0.1, 0.93, 1.0)),
-    Source("images/project/handshaking.png", box=(0.36, 0.0, 1.0, 1.0)),
-    Source("images/project/mobis_project.png"),
-    Source("images/project/mobis_project_2.png", studio=True),
+    Source("images/project/mobile_cobot_safety_guideline/main.png", studio=True),
+    Source("images/project/forestry_mobile_platform/main.png", box=(0.0, 0.1, 0.93, 1.0)),
+    Source("images/project/virtual_handshake/main.png", box=(0.36, 0.0, 1.0, 1.0)),
+    Source("images/project/mobile_manipulator_whole_body_control/main.png"),
+    Source("images/project/mobile_manipulator_whole_body_control/2.png", studio=True),
 ]
 
 
